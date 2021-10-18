@@ -22,7 +22,7 @@ class MyDocument extends Document {
             rel="preconnect"
             href="https://fonts.gstatic.com"
             //@ts-ignore
-            crossorigin
+            crossrigin="true"
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"

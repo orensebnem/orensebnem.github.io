@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 import "tailwindcss/tailwind.css";
+import { GetStaticProps } from 'next'
+import { userData } from '../data';
 
-const IndexPage = () => (
+const IndexPage = ({user:User}) => (
   <Layout title="Bora Oren Showcase">
     <div className="flex justify-between bg-black">
       <span
@@ -25,7 +27,7 @@ const IndexPage = () => (
         xs:pl-10
         "
       >
-        Hi, I'm Bora Oren.
+        Hi, I'm {userData.name}
         <br />
         <span
           className="text-indigo-400 
@@ -40,10 +42,10 @@ const IndexPage = () => (
         xs:text-xl
         "
         >
-          Software Developer
+          {userData.title}
         </span>
       </span>
-      <img src="./garett.png" className="w-1/2" />
+      <img src={userData.image} className="w-1/2" />
     </div>
   </Layout>
 );
@@ -51,5 +53,14 @@ const IndexPage = () => (
 /*
 <div className="relative h-screen bg-black bg-opacity-75 w-1/2" />
 */
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  try {
+    return { props: { user:userData } }
+  } catch (err) {
+    return { props: { errors: err.message } }
+  }
+}
+
 
 export default IndexPage;
