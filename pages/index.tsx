@@ -1,14 +1,20 @@
-import Link from "next/link";
 import Layout from "../components/Layout";
 import "tailwindcss/tailwind.css";
-import { GetStaticProps } from 'next'
-import { userData } from '../data';
+import { GetStaticProps } from "next";
+import { homePage } from "../data";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import LocaleSwitcher from "../components/LocaleSwitcher";
 
-const IndexPage = ({user:User}) => (
-  <Layout title="Bora Oren Showcase">
-    <div className="flex justify-between bg-black">
-      <span
-        className=" self-center 
+const IndexPage = ({ homePage: HomePage }) => {
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
+
+  return (
+    <Layout title="Bora Oren Showcase">
+      <div className="flex justify-between bg-black">
+        <span
+          className=" self-center 
         text-white
         2xl:text-7xl
         xl:text-7xl
@@ -26,11 +32,11 @@ const IndexPage = ({user:User}) => (
         s:pl-10
         xs:pl-10
         "
-      >
-        Hi, I'm {userData.name}
-        <br />
-        <span
-          className="text-indigo-400 
+        >
+          {homePage.hi[locale]} {homePage.Im[locale]} {homePage.name}
+          <br />
+          <span
+            className="text-indigo-400 
         font-black 
         bg-gray-900
         2xl:text-6xl
@@ -41,26 +47,26 @@ const IndexPage = ({user:User}) => (
         s:text-2xl
         xs:text-xl
         "
-        >
-          {userData.title}
+          >
+            {homePage.title[locale]}
+          </span>
         </span>
-      </span>
-      <img src={userData.image} className="w-1/2" />
-    </div>
-  </Layout>
-);
+        <img src={homePage.image} className="w-1/2" />
+      </div>
+    </Layout>
+  );
+};
 
 /*
 <div className="relative h-screen bg-black bg-opacity-75 w-1/2" />
 */
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async () => {
   try {
-    return { props: { user:userData } }
+    return { props: { homePage: homePage } };
   } catch (err) {
-    return { props: { errors: err.message } }
+    return { props: { errors: err.message } };
   }
-}
-
+};
 
 export default IndexPage;
