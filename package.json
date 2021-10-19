@@ -1,5 +1,4 @@
 {
-  "name": "showcase",
   "private": true,
   "scripts": {
     "dev": "next",
