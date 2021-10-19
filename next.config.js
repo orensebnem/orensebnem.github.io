@@ -9,5 +9,5 @@ module.exports = {
       // a non-locale prefixed path e.g. `/hello`
       defaultLocale: 'en-US',
     },*/
-    assetPrefix: isProd ? 'showcase' : ''
+    assetPrefix: isProd ? '/showcase' : ''
   }
