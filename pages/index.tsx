@@ -3,12 +3,8 @@ import "tailwindcss/tailwind.css";
 import { GetStaticProps } from "next";
 import { homePageData } from "../data/pages/home";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import LocaleSwitcher from "../components/LocaleSwitcher";
 
 const IndexPage = ({ homePageData: HomePageData }) => {
-  const router = useRouter();
-  const { locale, locales, defaultLocale } = router;
 
   return (
     <Layout title="Bora Oren Showcase">
@@ -33,7 +29,7 @@ const IndexPage = ({ homePageData: HomePageData }) => {
         xs:pl-10
         "
         >
-          {homePageData.hi[locale]} {homePageData.Im[locale]} {homePageData.name}
+          {homePageData.hi["en-US"]} {homePageData.Im["en-US"]} {homePageData.name}
           <br />
           <span
             className="text-indigo-400 
@@ -48,7 +44,7 @@ const IndexPage = ({ homePageData: HomePageData }) => {
         xs:text-xl
         "
           >
-            {homePageData.title[locale]}
+            {homePageData.title["en-US"]}
           </span>
         </span>
         <img src={homePageData.image} className="w-1/2" />

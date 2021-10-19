@@ -20,5 +20,5 @@ export const homePageData: HomePageData =  {
         "en-US": "Software Developer",
         "tr-TR": "Yazılım Geliştirici",
     },
-    image: "garett.png",
+    image: "dunes.jpg",
 }
