@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { User } from '../interfaces/homePage'
+import { User } from '../data/pages/home/homePage'
 
 type ListDetailProps = {
   item: User

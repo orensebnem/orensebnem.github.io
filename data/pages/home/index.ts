@@ -1,6 +1,12 @@
-import { HomePage } from './interfaces/homePage'
+export type HomePageData = {
+    hi: object;
+    Im: object;
+    name: string;
+    title: object;
+    image: string;
+  }
 
-export const homePage: HomePage =  {
+export const homePageData: HomePageData =  {
     hi: {
         "en-US": "Hi,",
         "tr-TR": "Merhaba,",

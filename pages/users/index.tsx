@@ -1,13 +1,12 @@
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 
-import { User } from '../../interfaces/homePage'
-import { sampleUserData } from '../../utils/sample-data'
+import { HomePageData } from '../../data/pages/home'
 import Layout from '../../components/Layout'
 import List from '../../components/List'
 
 type Props = {
-  items: User[]
+  items: HomePageData[]
 }
 
 const WithStaticProps = ({ items }: Props) => (

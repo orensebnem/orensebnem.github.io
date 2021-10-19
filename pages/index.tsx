@@ -1,12 +1,12 @@
 import Layout from "../components/Layout";
 import "tailwindcss/tailwind.css";
 import { GetStaticProps } from "next";
-import { homePage } from "../data";
+import { homePageData } from "../data/pages/home";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import LocaleSwitcher from "../components/LocaleSwitcher";
 
-const IndexPage = ({ homePage: HomePage }) => {
+const IndexPage = ({ homePageData: HomePageData }) => {
   const router = useRouter();
   const { locale, locales, defaultLocale } = router;
 
@@ -33,7 +33,7 @@ const IndexPage = ({ homePage: HomePage }) => {
         xs:pl-10
         "
         >
-          {homePage.hi[locale]} {homePage.Im[locale]} {homePage.name}
+          {homePageData.hi[locale]} {homePageData.Im[locale]} {homePageData.name}
           <br />
           <span
             className="text-indigo-400 
@@ -48,10 +48,10 @@ const IndexPage = ({ homePage: HomePage }) => {
         xs:text-xl
         "
           >
-            {homePage.title[locale]}
+            {homePageData.title[locale]}
           </span>
         </span>
-        <img src={homePage.image} className="w-1/2" />
+        <img src={homePageData.image} className="w-1/2" />
       </div>
     </Layout>
   );
@@ -63,7 +63,7 @@ const IndexPage = ({ homePage: HomePage }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   try {
-    return { props: { homePage: homePage } };
+    return { props: { homePageData: homePageData } };
   } catch (err) {
     return { props: { errors: err.message } };
   }

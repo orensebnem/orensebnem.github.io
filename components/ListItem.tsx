@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { User } from '../interfaces/homePage'
+import { HomePageData } from '../data/pages/home'
 
 type Props = {
-  data: User
+  data: HomePageData
 }
 
 const ListItem = ({ data }: Props) => (
