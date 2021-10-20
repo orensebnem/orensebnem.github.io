@@ -5,13 +5,12 @@ import { homePageData } from "../data/pages/home";
 import Link from "next/link";
 
 const IndexPage = ({ homePageData: HomePageData }) => {
-
   return (
     <Layout title="Bora Oren Showcase">
       <div className="flex justify-between bg-black">
         <span
           className=" self-center 
-        text-white
+        text-gray-50
         2xl:text-7xl
         xl:text-7xl
         lg:text-6xl
@@ -29,10 +28,12 @@ const IndexPage = ({ homePageData: HomePageData }) => {
         xs:pl-10
         "
         >
-          {homePageData.hi["en-US"]} {homePageData.Im["en-US"]} {homePageData.name}
+          <span className="font-black">{homePageData.hi["en-US"]} {homePageData.Im["en-US"]}{" "} </span>
+          <span className="font-black">{homePageData.name}</span>
           <br />
           <span
-            className="text-indigo-400 
+            className="text-blue-400 
+            font-handle
         font-black 
         bg-gray-900
         2xl:text-6xl

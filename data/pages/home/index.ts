@@ -15,10 +15,10 @@ export const homePageData: HomePageData =  {
         "en-US": "I'm",
         "tr-TR": "Ben"
     },
-    name: "Bora Oren",
+    name: "Bora,",
     title: {
         "en-US": "Software Developer",
         "tr-TR": "Yazılım Geliştirici",
     },
-    image: "dunes.jpg",
+    image: "bora.png",
 }
