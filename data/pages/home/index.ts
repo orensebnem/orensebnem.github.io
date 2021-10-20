@@ -15,7 +15,7 @@ export const homePageData: HomePageData =  {
         "en-US": "I'm",
         "tr-TR": "Ben"
     },
-    name: "Bora,",
+    name: "Bora",
     title: {
         "en-US": "Software Developer",
         "tr-TR": "Yazılım Geliştirici",

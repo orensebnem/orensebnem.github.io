@@ -43,8 +43,7 @@ const IndexPage = ({ homePageData: HomePageData }) => {
         sm:text-3xl
         s:text-2xl
         xs:text-xl
-        "
-          >
+        ">
             {homePageData.title["en-US"]}
           </span>
         </span>
