@@ -28,8 +28,8 @@ const IndexPage = ({ homePageData: HomePageData }) => {
         xs:pl-10
         "
         >
-          <span className="font-black">{homePageData.hi["en-US"]} {homePageData.Im["en-US"]}{" "} </span>
-          <span className="font-black">{homePageData.name}</span>
+          <span className="font-black font-roboto">{homePageData.hi["en-US"]} {homePageData.Im["en-US"]}{" "} </span>
+          <span className="font-black font-roboto">{homePageData.name}</span>
           <br />
           <span
             className="text-blue-400 

@@ -10,9 +10,10 @@ module.exports = {
         garett: "url('/garett.png')",
       }),
       fontFamily: {
-        handle: ['handlee', ...defaultTheme.fontFamily.sans],
-        gochiHand: ['Gochi Hand', ...defaultTheme.fontFamily.sans],
-        grotesque: ['"Darker Grotesque"', ...defaultTheme.fontFamily.sans],
+        handle: ["handlee", ...defaultTheme.fontFamily.sans],
+        gochiHand: ["Gochi Hand", ...defaultTheme.fontFamily.sans],
+        grotesque: ["Darker Grotesque", ...defaultTheme.fontFamily.sans],
+        roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
       },
     },
     screens: {
