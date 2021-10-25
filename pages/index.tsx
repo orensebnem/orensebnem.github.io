@@ -7,10 +7,10 @@ import Link from "next/link";
 const IndexPage = ({ homePageData: HomePageData }) => {
   return (
     <Layout title="Bora Oren Showcase">
-      <div className="flex justify-between bg-black">
+      <div className="flex justify-between bg-primary-900">
         <span
           className=" self-center 
-        text-gray-50
+        text-primary-50
         2xl:text-7xl
         xl:text-7xl
         lg:text-6xl
@@ -28,14 +28,14 @@ const IndexPage = ({ homePageData: HomePageData }) => {
         xs:pl-10
         "
         >
-          <span className="font-black font-roboto">{homePageData.hi["en-US"]} {homePageData.Im["en-US"]}{" "} </span>
-          <span className="font-black font-roboto">{homePageData.name}</span>
+          <span className="font-black font-title text-primary-50">{homePageData.hi["en-US"]} {homePageData.Im["en-US"]}{" "} </span>
+          <span className="font-black font-title text-primary-50">{homePageData.name["en-US"]}</span>
           <br />
           <span
-            className="text-blue-400 
-            font-handle
+            className="text-secondary-400
+            font-subtitle
         font-black 
-        bg-gray-900
+       bg-primary-800
         2xl:text-6xl
         xl:text-6xl
         lg:text-5xl

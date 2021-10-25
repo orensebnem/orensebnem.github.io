@@ -22,5 +22,5 @@ export const homePageData: HomePageData =  {
         "en-US": "Software Developer",
         "tr-TR": "Yazılım Geliştirici",
     },
-    image: "bora.png",
+    image: "bora.png", //should put image file in public folder
 }

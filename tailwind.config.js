@@ -1,26 +1,17 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
+const myTheme = require('./data/themes/index');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
+  
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        dunes: "url('/dunes.jpg')",
-        garett: "url('/garett.png')",
-      }),
-      fontFamily: {
-        handle: ["handlee", ...defaultTheme.fontFamily.sans],
-        gochiHand: ["Gochi Hand", ...defaultTheme.fontFamily.sans],
-        grotesque: ["Darker Grotesque", ...defaultTheme.fontFamily.sans],
-        roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
-      },
+      colors: myTheme.colors,
+      fontFamily: myTheme.fontFamily,
     },
-    screens: {
-      'xs': '320px',
-      's': '475px',
-      ...defaultTheme.screens,
-    },
+    screens: myTheme.screens,
   },
   variants: {
     extend: {},

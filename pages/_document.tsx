@@ -6,6 +6,8 @@ import Document, {
   NextScript,
 } from "next/document";
 
+import myTheme from "../data/themes/index";
+
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -13,29 +15,18 @@ class MyDocument extends Document {
     return initialProps;
   }
 
+  createFontFamilyLinks = () => {
+    const fontFamilyLinks = [];
+    for (const [key, value] of Object.entries(myTheme.fontFamilyUrls)) {
+      fontFamilyLinks.push(<link key={key} href={value} rel="stylesheet" />);
+    }
+    return fontFamilyLinks;
+  };
+
   render() {
     return (
       <Html>
-        <Head>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
-            rel="stylesheet"
-          />
-
-          <link
-            href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Handlee&display=swap"
-            rel="stylesheet"
-          />
-
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;800&display=swap"
-            rel="stylesheet"
-          />
-
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"/>
-        </Head>
+        <Head>{this.createFontFamilyLinks()}</Head>
         <body>
           <Main />
           <NextScript />
