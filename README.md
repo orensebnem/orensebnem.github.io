@@ -1,6 +1,13 @@
 # I18N
 [nextjs localization](https://github.com/vercel/next.js/blob/canary/examples/i18n-routing)
 
+# DEPLOY
+1. `gcd`
+1. `git pull`
+1. `gco <NAME>`
+1. `git pull`
+1. `git rebase develop`
+1. `git push`
 # TypeScript Next.js example
 
 This is a really simple project that shows the usage of Next.js with TypeScript.
