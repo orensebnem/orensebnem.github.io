@@ -3,10 +3,12 @@ import "tailwindcss/tailwind.css";
 import { GetStaticProps } from "next";
 import { homePageData } from "../data/pages/home";
 import Link from "next/link";
+import packageJson from '../package.json';
 
 const IndexPage = ({ homePageData: HomePageData }) => {
   return (
     <Layout title="Bora Oren Showcase">
+      <span>&nbsp; </span>V{packageJson.version}
       <div className="flex justify-between bg-primary-900">
         <span
           className=" self-center 
