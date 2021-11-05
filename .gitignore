@@ -36,4 +36,5 @@ yarn-error.log*
 # data
 data/blogs
 data/projects
+data/**/index.*
 public/images
