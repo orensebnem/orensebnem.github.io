@@ -4,10 +4,11 @@
 
 # DEPLOY
 1. `gcd`
+1. go to github / fetch upstream button / fetch and merge
 1. `git pull`
 1. `gco <NAME>`
-1. `git pull`
 1. `git rebase develop`
+1. `git pull`
 1. `git push`
 # TypeScript Next.js example
 
