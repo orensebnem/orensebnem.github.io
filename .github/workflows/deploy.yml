@@ -41,6 +41,12 @@ jobs:
           npm run build
           npm run export
 
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release --branches develop
+
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
