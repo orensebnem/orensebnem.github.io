@@ -36,12 +36,12 @@ const IndexPage = ({ homePageData: HomePageData }) => {
             font-subtitle
         font-black 
        bg-primary-800
-        2xl:text-6xl
-        xl:text-6xl
-        lg:text-5xl
-        md:text-4xl
-        sm:text-3xl
-        s:text-2xl
+        2xl:text-5xl
+        xl:text-5xl
+        lg:text-4xl
+        md:text-3xl
+        sm:text-2xl
+        s:text-xl
         xs:text-xl
         ">
             {homePageData.title["en-US"]}
