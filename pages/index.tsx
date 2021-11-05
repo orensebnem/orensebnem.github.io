@@ -47,7 +47,7 @@ const IndexPage = ({ homePageData: HomePageData }) => {
             {homePageData.title["en-US"]}
           </span>
         </span>
-        <img src={homePageData.image} className="w-1/2" />
+        <img src={`images/${homePageData.image}`} className="w-1/2" />
       </div>
     </Layout>
   );
