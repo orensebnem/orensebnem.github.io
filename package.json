@@ -1,4 +1,5 @@
 {
+  "name": "showcase",
   "version": "1.1.0",
   "private": true,
   "scripts": {
@@ -19,6 +20,7 @@
     "@types/react-dom": "^17.0.1",
     "autoprefixer": "^10.3.7",
     "postcss": "^8.3.9",
+    "semantic-release": "^18.0.0",
     "tailwindcss": "^2.2.16",
     "typescript": "4.4.4"
   }
