@@ -1,13 +1,16 @@
 import Layout from "../components/Layout";
 import "tailwindcss/tailwind.css";
 import { GetStaticProps } from "next";
-import { homePageData } from "../data/pages/home";
+import { homePageData } from "../data/pages/home/index";
 import Link from "next/link";
+import packageJson from "../package.json";
+import Image from "next/image";
 
 const IndexPage = ({ homePageData: HomePageData }) => {
   return (
     <Layout title="Bora Oren Showcase">
-      <div className="flex justify-between bg-primary-900">
+      <span style={{ fontWeight: "bold" }}>&nbsp; V{packageJson.version}</span>
+      <div className="flex justify-between bg-primary-900 mt-5">
         <span
           className=" self-center 
         text-primary-50
@@ -28,8 +31,12 @@ const IndexPage = ({ homePageData: HomePageData }) => {
         xs:pl-10
         "
         >
-          <span className="font-black font-title text-primary-50">{homePageData.hi["en-US"]} {homePageData.Im["en-US"]}{" "} </span>
-          <span className="font-black font-title text-primary-50">{homePageData.name["en-US"]}</span>
+          <span className="font-black font-title text-primary-50">
+            {homePageData.hi["en-US"]} {homePageData.Im["en-US"]}{" "}
+          </span>
+          <span className="font-black font-title text-primary-50">
+            {homePageData.name["en-US"]}
+          </span>
           <br />
           <span
             className="text-secondary-400
@@ -43,11 +50,12 @@ const IndexPage = ({ homePageData: HomePageData }) => {
         sm:text-2xl
         s:text-xl
         xs:text-xl
-        ">
+        "
+          >
             {homePageData.title["en-US"]}
           </span>
         </span>
-        <img src={`images/${homePageData.image}`} className="w-1/2" />
+        <img src={`./images/${homePageData.image}`} className="w-1/2 -mt-10" />
       </div>
     </Layout>
   );

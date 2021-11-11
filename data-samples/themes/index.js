@@ -1,7 +1,7 @@
 module.exports = {
   colors: {
     primary: "gray",
-    secondary: "green",
+    secondary: "blue",
   },
   fontFamily: {
     title: {
@@ -9,8 +9,8 @@ module.exports = {
       url: "https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap",
     },
     subtitle: {
-      name: "Open Sans",
-      url: "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap",
+      name: "handlee",
+      url: "https://fonts.googleapis.com/css2?family=Handlee&display=swap",
     },
   },
 };
