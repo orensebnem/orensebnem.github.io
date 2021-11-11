@@ -1,20 +1,20 @@
 import { HomePageData } from "../../../interfaces/HomePageData";
 
 export const homePageData: HomePageData =  {
+    pageTitle: {
+        "en-US": "Sebnem Oren Showcase",
+    },
     hi: {
         "en-US": "Hi,",
-        "tr-TR": "Merhaba,",
     },
     Im: {
         "en-US": "I'm",
-        "tr-TR": "Ben"
     },
     name: {
-        "en-US": "Bora",
+        "en-US": "Sebnem",
     },
     title: {
-        "en-US": "Software Developer",
-        "tr-TR": "Yazılım Geliştirici",
+        "en-US": "Product Enthusiast",
     },
-    image: "bora.png", //should put image file in public folder
+    image: "sebnem.png",
 }
