@@ -219,70 +219,70 @@ create or join a session when he/she is online.
 
 ### Acceptance Criteria 1 : Create Playgroup
 
-```
-GIVEN the user signs in PlayTime App
-    AND is on “Calendar” screen
-WHEN the user clicks on “Create” button
-THEN the user is redirected to the “Create Playgroup” screen to fill the details
-    AND current day is selected
-    AND organiser is set as “me” and shows user’s profile picture
-    AND location is pre-populated with the home address of current user by default and it is enabled
-    AND the telephone number field is pre-populated with user’s mobile number and it is disabled
-    AND the number of children is set to 1 and enabled
+```gherkin
+Given the user signs in PlayTime App
+    And is on “Calendar” screen
+When the user clicks on “Create” button
+Then the user is redirected to the “Create Playgroup” screen to fill the details
+    And current day is selected
+    And organiser is set as “me” and shows user’s profile picture
+    And location is pre-populated with the home address of current user by default and it is enabled
+    And the telephone number field is pre-populated with user’s mobile number and it is disabled
+    And the number of children is set to 1 and enabled
 ```
 
 ### Acceptance Criteria 2 : Select Phone Number
 
-```
-GIVEN the user signs in PlayTime App
-    AND is on “Calendar” screen
-WHEN the user clicks on a day from the “Calendar” screen
-    AND clicks on “Create” button
-THEN the user is redirected to the “Create Playgroup” screen to fill the details
-    AND current day is selected
-    AND organiser is set as “me” and shows user’s profile picture
-    AND location is pre-populated with the home address of current user by default and it is enabled
-    AND the telephone number field is pre-populated with user's mobile number and it is disabled and the number of participant is filled with “Please select” and enabled
+```gherkin
+Given the user signs in PlayTime App
+    And is on “Calendar” screen
+When the user clicks on a day from the “Calendar” screen
+    And clicks on “Create” button
+Then the user is redirected to the “Create Playgroup” screen to fill the details
+    And current day is selected
+    And organiser is set as “me” and shows user’s profile picture
+    And location is pre-populated with the home address of current user by default and it is enabled
+    And the telephone number field is pre-populated with user's mobile number and it is disabled and the number of participant is filled with “Please select” and enabled
 ```
 
 ### Acceptance Criteria 3 : Create Playgroup / Shows a confirmation
 
-```
-GIVEN the user signs in PlayTime App
-    AND the user has selected the day
-    AND is on “Create Playgroup” screen,
-WHEN the user selects the time of the session as “8:30-12:30”
-    AND leaves the location with default value
-    AND selects the number of the participants as 4
-    AND the user clicks on “Create” button
-THEN the system shows a confirmation dialog asking if the user confirms to create a playgroup with the given parameters
+```gherkin
+Given the user signs in PlayTime App
+    And the user has selected the day
+    And is on “Create Playgroup” screen,
+When the user selects the time of the session as “8:30-12:30”
+    And leaves the location with default value
+    And selects the number of the participants as 4
+    And the user clicks on “Create” button
+Then the system shows a confirmation dialog asking if the user confirms to create a playgroup with the given parameters
 (day, time, location, number of participants)
 ```
 
 ### Acceptance Criteria 4 : Create Playgroup / Field error messages
 
-```
-GIVEN the user signs in PlayTime App
-    AND the user has selected the day
-    AND is on “Create Playgroup” screen,
-WHEN user doesn’t select the time and the number of participants
-    AND user clicks on “Create” button
-THEN Text Field Error messages appear for time and number of participant fields on “Create Playgroup” screen
+```gherkin
+Given the user signs in PlayTime App
+    And the user has selected the day
+    And is on “Create Playgroup” screen,
+When user doesn’t select the time and the number of participants
+    And user clicks on “Create” button
+Then Text Field Error messages appear for time and number of participant fields on “Create Playgroup” screen
 ```
 
 ### Acceptance Criteria 5 : Create Playgroup / And notification sends
 
-```
-GIVEN the user signs in PlayTime App
-    AND the user has selected the day
-    AND is on “Create Playgroup” screen,
-WHEN user selects time slot
-    AND location is set as user’s home address
-    AND user selects the number of the participants as 4
-    AND user clicks on “Create” button
-THEN the system creates a new playgroup session
-    AND a “Playgroup is Created” Info message is shown to the user on the “Playgroup Session” screen
-    AND the system sends a notification to other users about this new playgroup
+```gherkin
+Given the user signs in PlayTime App
+    And the user has selected the day
+    And is on “Create Playgroup” screen,
+When user selects time slot
+    And location is set as user’s home address
+    And user selects the number of the participants as 4
+    And user clicks on “Create” button
+Then the system creates a new playgroup session
+    And a “Playgroup is Created” Info message is shown to the user on the “Playgroup Session” screen
+    And the system sends a notification to other users about this new playgroup
 ```
 
 # User Story 3 / Join a playgroup

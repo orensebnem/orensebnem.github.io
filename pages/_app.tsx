@@ -1,3 +1,6 @@
+import "highlight.js/styles/docco.css";
+import gherkin from "highlight.js/lib/languages/gherkin";
+import hljs from "highlight.js";
 import {Button, ChakraProvider, useColorMode} from "@chakra-ui/react";
 // 1. Import the utilities
 import {extendTheme} from "@chakra-ui/react";
@@ -10,6 +13,7 @@ import '@fontsource/handlee/400.css';
 import '@fontsource/open-sans/500.css'
 import '@fontsource/open-sans/500-italic.css'
 
+hljs.registerLanguage('gherkin', gherkin);
 
 function MyApp({Component, pageProps}: AppProps) {
     const {colorMode, toggleColorMode} = useColorMode();
