@@ -1,33 +1,20 @@
-import Document, {
-  DocumentContext,
-  Html,
-  Head,
-  Main,
-  NextScript,
-} from "next/document";
-
-import myTheme from "../data/themes/index";
+import Document, {Head, Html, Main, NextScript,} from "next/document";
+import {ColorModeScript} from "@chakra-ui/react";
+import theme from "../data/themes/theme";
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
+  static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-
-    return initialProps;
+    return { ...initialProps };
   }
-
-  createFontFamilyLinks = () => {
-    const fontFamilyLinks = [];
-    for (const [key, value] of Object.entries(myTheme.fontFamilyUrls)) {
-      fontFamilyLinks.push(<link key={key} href={value} rel="stylesheet" />);
-    }
-    return fontFamilyLinks;
-  };
 
   render() {
     return (
       <Html>
-        <Head>{this.createFontFamilyLinks()}</Head>
+        <Head/>
         <body>
+          {/* 👇 Here's the chakra-ui color script */}
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
         </body>
