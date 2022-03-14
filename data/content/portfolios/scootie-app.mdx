@@ -49,14 +49,31 @@ transportation method in Europe
 3. Can we ensure that our customers find riding scooter safe? 
 
 ## User Story Map
-User sotry map gelecek
-
+<Components.Chakra.Image 
+        src="/images/portfolios/scootie-mobile-app/user-story-map/user-journey.png" 
+        alt="User Journey" />
 
 ## Concept Screen
-Concept Screen gelecek!
+
+<Components.Chakra.SimpleGrid columns={[1, null, 1]} spacing={5}>
+{Array(3).fill().map((xyz, index)=> {
+  return <Components.Chakra.Box>
+    <Components.Chakra.Image 
+        src={`/images/portfolios/scootie-mobile-app/concept/concept-${index+1}.png`} 
+        alt={`Concept ${index+1}`} />
+  </Components.Chakra.Box>
+})}
+</Components.Chakra.SimpleGrid>
 
 # The Storyboard
+   
+<Components.Chakra.Image 
+        borderRadius="lg"
+        boxShadow="lg"
+        src="/images/portfolios/scootie-mobile-app/storyboard/storyboard.png"
+        alt="Storyboard" />
 
+<br/>
 
 ## User Test Flow
 <Components.FeatureStickyNotes featureNotes={featureNotes}/>
@@ -64,75 +81,50 @@ Concept Screen gelecek!
 ## Storyboard: entire view
 !storyboard gelecek!
 
-### Storyboard: Cell 1 detail
-!cell1 gelecek!
+## Wireframes
 
-### Storyboard: Cell 2 detail
-!cell2 gelecek!
+<Components.Chakra.SimpleGrid columns={[2, null, 3]} spacing={5}>
+{Array(9).fill().map((xyz, index)=> {
+  return <Components.Chakra.Box>
+    <Components.Chakra.Image 
+        src={`/images/portfolios/scootie-mobile-app/wireframe/wireframe_${index+1}.png`} 
+        alt={`Wireframe ${index+1}`} />
+  </Components.Chakra.Box>
+})}
+</Components.Chakra.SimpleGrid>
 
-### Storyboard: Cell 3 detail
-!cell3 gelecek!
-
-### Storyboard: Cell 4 detail
-!cell4 gelecek!
-
-### Storyboard: Cell 5 detail
-!cell5 gelecek!
-
-### Storyboard: Cell 6 detail
-!cell6 gelecek!
-
-### Storyboard: Cell 7 detail
-!cell7 gelecek!
-
-### Storyboard: Cell 8 detail
-!cell8 gelecek!
 
 # The Prototype
 
+<br/>
 ## Mobile Experience
 
-### Splash Screen
+export const prototypeTitles = {0:"Splash",
+1:"Sign-up",
+2:"Menu",
+3:"Profile",
+4:"Booking",
+5:"Drop-off station",
+6:"Booking date",
+7:"Payment confirmation",
+8:"Booking approval",
+9:"Directions to Scootie",
+10:"Direction to drop-off",
+11:"End of booking"};
 
-<Components.Chakra.SimpleGrid columns={[2, null, 3]} spacing={10}>
-  <Components.Chakra.Box bg='tomato' height='80px'></Components.Chakra.Box>
-  <Components.Chakra.Box bg='tomato' height='80px'></Components.Chakra.Box>
-  <Components.Chakra.Box bg='tomato' height='80px'></Components.Chakra.Box>
-  <Components.Chakra.Box bg='tomato' height='80px'></Components.Chakra.Box>
-  <Components.Chakra.Box bg='tomato' height='80px'></Components.Chakra.Box>
+<Components.Chakra.SimpleGrid columns={[2, null, 3]} spacing={5}>
+{Array(12).fill().map((xyz, index)=> {
+  return <Components.Chakra.Box>
+    <h3>{prototypeTitles[index]}</h3>
+    <Components.Chakra.Image 
+        borderRadius="lg"
+        boxShadow="lg"
+        src={`/images/portfolios/scootie-mobile-app/prototype/prototype_${index+1}.png`} 
+        alt={`Wireframe ${index+1}`} />
+  </Components.Chakra.Box>
+})}
 </Components.Chakra.SimpleGrid>
 
-!splash screen gelecek!
-
-## Sign-up Screen
-!Sign-up screen gelecek!
-
-## Menu Screen
-!Menu screen gelecek!
-
-## Profile Screen
-!Profile screen gelecek
-
-## Booking Screen
-!Booking screen gelecek
-
-## Drop-off Station Selection Screen
-!Drop-off Station Selection screen gelecek
-
-## Booking Dates Selection Screen
-!Booking Dates Selection screen gelecek!
-
-## Payment Confirmation Screen
-!Payment Confirmation screen gelecek!
-
-## Booking Approval Screen
-!Booking Approval screen gelecek!
-
-## Directions to Scootie Screen
-!Directions to Scootie screen gelecek!
-
-## Bonus Screen
-!Bonus screen gelecek!
 
 # The Summary Report
 
