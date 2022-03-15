@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/Layout";
 import {GetStaticProps} from "next";
 import packageJson from "../package.json";
@@ -17,6 +17,7 @@ const IndexPage: React.FC<{
 
     const {colorMode, toggleColorMode} = useColorMode();
     const {isOpen, onToggle} = useDisclosure()
+    const [isToggled, setIsToggled] = useState({});
 
 
     return (
@@ -84,17 +85,18 @@ const IndexPage: React.FC<{
                   fontWeight={900}
                   mt={10}>PORTFOLIOS</Text>
 
-
             <SimpleGrid columns={[1, null, 2]} spacing='20px'>
                 {portfolios.map((portfolio, index) => {
                     return <Box height='300px'
                                 overflow='hidden'
                                 rounded={15}
-                                boxShadow={["lg", "lg"]}>
+                                boxShadow={"lg"}
+                                borderStyle="ridge"
+                                borderColor="gray">
 
 
-                        <Box boxSize="100%" position="relative" bg="#5DB075" >
-                            <SlideFade in={isOpen} offsetY='-60px' transition={{
+                        <Box boxSize="100%" position="relative">
+                            <SlideFade in={isToggled[portfolio.frontmatter.title]} offsetY='-60px' transition={{
                                 enter: {
                                     duration: 0.1
                                 }
@@ -107,7 +109,7 @@ const IndexPage: React.FC<{
                                       fontWeight={900}
                                       pointerEvents="none"
                                       position={"absolute"}
-                                      color="#5DB075"
+                                      color={`#${portfolio.frontmatter.colorPalette}`}
                                 >{portfolio.frontmatter.title}</Text>
                             </SlideFade>
 
@@ -117,10 +119,9 @@ const IndexPage: React.FC<{
                                        objectFit='cover'
                                        boxSize='100%'
                                        bg={"white"}
-                                       opacity={.4}
                                        transition="0.1s"
-                                       onMouseOver={onToggle}
-                                       onMouseOut={onToggle}
+                                       onMouseOver={()=> setIsToggled({...isToggled, [portfolio.frontmatter.title]:true})}
+                                       onMouseOut={()=> setIsToggled({...isToggled, [portfolio.frontmatter.title]:false})}
                                        _hover={{
                                            opacity: 1,
                                            cursor: "pointer",

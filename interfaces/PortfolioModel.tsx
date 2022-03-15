@@ -6,10 +6,12 @@ export interface Frontmatter {
   date: string;
   readMore: string;
   image?: string;
+  colorPalette: string;
 }
 
 export default interface PortfolioModel {
   code: string;
   slug: string;
   frontmatter: Frontmatter;
+  
 }
