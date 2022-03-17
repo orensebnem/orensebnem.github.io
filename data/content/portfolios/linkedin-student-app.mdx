@@ -1,7 +1,194 @@
 ---
-title: Linked-in Student App
-summary: Linked-in Student App Summary
-image: portfolios/linkedin-student-app/linkedin-student-app.png
-date: 23/01/2022
-colorPalette: 4e59c8
+title: Linkedin Student App
+summary: Helping graduates for a better start
+image: portfolios/linkedin-student-app/linkedin-mobile-app.png
+date: 24/01/2022
+colorPalette: 2767b2
 ---
+
+export const graduates = [
+    {
+        text: "Associate Degree recipients",
+        number: "990 thousand",
+        graphWidth: 99,
+        colorFrom: "#79B9D2",
+        colorTo: "#4295A4",
+    },
+    {
+        text: "Bachelor Degree recipients",
+        number: "1.9 million",
+        graphWidth: 190,
+        colorFrom: "#5984E1",
+        colorTo: "#2955C5",
+    },
+    {
+        text: "Master Degree recipients",
+        number: "820 thousand",
+        graphWidth: 82,
+        colorFrom: "#595ACF",
+        colorTo: "#213E89"
+    },
+    {
+        text: "Doctorate Degree recipients",
+        number: "184 thousand",
+        graphWidth: 18.4,
+        colorFrom: "#30329B",
+        colorTo: "#0D2667"
+    }
+    ];
+
+export const opportunityChart = [
+  {
+    name: '93',
+    year: 10,
+  },
+  {
+    name: '95',
+    year: 13,
+  },
+  {
+    name: '97',
+    year: 15,
+  },
+  {
+    name: '99',
+    year: 16,
+  },
+  {
+    name: '01',
+    year: 18,
+  },
+  {
+    name: '05',
+    year: 19,
+  },
+  {
+    name: '07',
+    year: 22,
+  },
+    {
+    name: '09',
+    year: 24,
+  },
+    {
+    name: '11',
+    year: 28,
+  },
+    {
+    name: '13',
+    year: 32,
+  },
+  {
+    name: '15',
+    year: 35,
+  },
+];
+
+# Background
+
+[Linkedin](https://linkedin.com/) is full of job opportunities 
+for any level of positions. Our corporate customers complain for not 
+reaching our right applicants for entry level positions
+
+The new graduates are pretty overwhelmed 
+and frustrated with being inexperienced 
+in job seeking.
+
+__What new grads need is more than a jobs directory.__
+Our customised solution for Students will provide a full support to the new graduates in their job seeking journey
+
+# Business Case
+
+## Initial Focus
+
+* 4 millions of graduates every year only in the U.S. (Source: [Statista](https://statista.com))
+* 3.4 millions of entry level positions in the U.S.  (Source: [Statista](https://statista.com))
+* Recruiters suffer from finding the right candidate for the jobs
+* The destructive effect of outstanding student loan debt on economics (around $1.6 Trillion) (Source: [Forbes](https://forbes.com))
+
+__College students need professional help in their job search__
+* A guide to tell them what they are able to do 
+* A trainer to teach them how to present their skills
+
+## Opportunity
+
+<Components.Chakra.SimpleGrid columns={[1, null, 2]} spacing='40px'>
+    <Components.Chakra.Box>
+        __Number of Graduates in US in 2019__
+      
+        {graduates.map((graduate)=> {
+            return <Components.Chakra.SimpleGrid columns={2}>
+                <Components.Chakra.Box w={graduate.graphWidth} 
+                                       h='120px' 
+                                       bgGradient={`linear(to-r, ${graduate.colorFrom}, ${graduate.colorTo} )`} 
+                                       borderRadius="lg" 
+                                       marginLeft={4}
+                                       marginBottom={2}/>
+                    
+                            <p>{graduate.text} <br/><b>{graduate.number}</b></p>
+                                
+            </Components.Chakra.SimpleGrid>     
+        })}
+         
+        <Components.Chakra.SimpleGrid columns={1}>
+            <Components.Chakra.Box w='100%' h='100px' bgGradient='linear(to-r, #03003F, #03003F )' borderRadius="lg" marginLeft={4}>
+                <p style={{color: "white", textAlign: "center"}}>NUMBER OF GRADUATES</p>
+                <h3 style={{color: "white", textAlign: "center", marginTop: "-10"}}>3.9 million</h3>
+            </Components.Chakra.Box>       
+        </Components.Chakra.SimpleGrid>        
+
+    </Components.Chakra.Box>
+
+    <Components.Chakra.Box>
+        __There are thousands of openings for new graduates 3.4 Million entry position__
+
+        In 2019, top industries new grads are getting hired into:
+        1. Hospital & Health Care __(870K+)__
+        2. Retail __(717K+)__
+        3. Financial Services __(470K+)__
+        4. Information Tech. & Services __(409K+)__
+        5. Computer Software __(275K+)__
+        6. Marketing & Advertising __(241K+)__
+        7. Education Management __(185K+)__
+        8. Higher Education __(108K+)__
+        9. Internet __(82K+)__
+        10. Accounting __(29K+)__
+    </Components.Chakra.Box>
+</Components.Chakra.SimpleGrid>
+
+<br/><br/>
+<Components.Chakra.SimpleGrid columns={[1, null, 2]} spacing='40px'>
+    <Components.Chakra.Box>
+        __Average Debt per Borrower in each year’s graduating class__
+
+        <Components.ReCharts.ResponsiveContainer width="100%" height={500}>
+                <Components.ReCharts.BarChart
+                width={500}
+                height={300}
+                data={opportunityChart}
+                margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                }}
+                >
+                <Components.ReCharts.CartesianGrid strokeDasharray="3 3" />
+                <Components.ReCharts.XAxis dataKey="name" />
+                <Components.ReCharts.YAxis unit="$"/>
+                <Components.ReCharts.Tooltip />
+                <Components.ReCharts.Legend />
+                <Components.ReCharts.Bar dataKey="year" fill="#385A92" />
+                </Components.ReCharts.BarChart>
+        </Components.ReCharts.ResponsiveContainer>
+    </Components.Chakra.Box>
+
+    <Components.Chakra.Box>
+        __Unemployment rate of  recent graduates in US__
+    </Components.Chakra.Box>
+</Components.Chakra.SimpleGrid>
+
+{/*<iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)"}}
+width="800" 
+height="450" 
+src={`https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLTlBiIw8VVh5fmqm1R8qR9%2FLinkedin-Student-App%3Fnode-id%3D0%253A1`} allowfullscreen={true}></iframe>*/}

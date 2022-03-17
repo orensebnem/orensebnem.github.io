@@ -4,6 +4,7 @@ const h1 = {
     fontSize: ['xl', '2xl', '4xl', '6xl'],
     fontFamily: "primary",
     fontWeight: 600,
+    marginLeft: 3,
 }
 
 export const themeOverride = {
@@ -65,6 +66,7 @@ export const themeOverride = {
                     color: "secondary.400",
                     mb: 2,
                     fontFamily: "secondary",
+                    ml: 3,
                 },
                 h3: {
                     fontSize: '2xl',
@@ -108,7 +110,7 @@ export const themeOverride = {
                 pre: {
                     whiteSpace: "pre-wrap",
                     mb: 5
-                }
+                },
             },
         }
     }

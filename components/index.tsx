@@ -6,6 +6,7 @@ import STable from "./molecules/table";
 import * as Chakra from "@chakra-ui/react";
 import FeatureStickyNotes from "./molecules/features/molecules/stickynotes";
 import FeatureMatrixEisenhower from "./molecules/features/molecules/matrix/eisenhover";
+import * as ReCharts from 'recharts';
 
 export {
     UserStories,
@@ -15,5 +16,7 @@ export {
     Chakra,
     STable,
     FeatureStickyNotes,
-    FeatureMatrixEisenhower
+    FeatureMatrixEisenhower,
+    ReCharts,
+
 };
