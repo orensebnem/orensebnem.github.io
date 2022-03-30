@@ -39,49 +39,91 @@ export const graduates = [
 
 export const opportunityChart = [
   {
-    name: '93',
-    year: 10,
+    year: '93',
+    price: 10,
   },
   {
-    name: '95',
-    year: 13,
+    year: '95',
+    price: 13,
   },
   {
-    name: '97',
-    year: 15,
+    year: '97',
+    price: 15,
   },
   {
-    name: '99',
-    year: 16,
+    year: '99',
+    price: 16,
   },
   {
-    name: '01',
-    year: 18,
+    year: '01',
+    price: 18,
   },
   {
-    name: '05',
-    year: 19,
+    year: '05',
+    price: 19,
   },
   {
-    name: '07',
-    year: 22,
+    year: '07',
+    price: 22,
   },
     {
-    name: '09',
-    year: 24,
+    year: '09',
+    price: 24,
   },
     {
-    name: '11',
-    year: 28,
+    year: '11',
+    price: 28,
   },
     {
-    name: '13',
-    year: 32,
+    year: '13',
+    price: 32,
   },
   {
-    name: '15',
-    year: 35,
+    year: '15',
+    price: 35,
   },
+];
+
+export const opportunityUnemploymentRateChart = [{
+  year: "Dec '18",
+  rate: 3.7
+},{
+  year: "Jan '19" ,
+  rate:  3.7
+},{
+  year:  "Feb '19",
+  rate:  3.7
+},{
+  year:  "Mar '19",
+  rate:  3.7
+},{
+  year:  "Apr '19",
+  rate:  3.7
+},{
+  year:  "May '19",
+  rate:  3.8
+},{
+  year:  "Jun '19",
+  rate:  4
+},{
+  year:  "Jul '19",
+  rate:  4
+},{
+  year:  "Aug '19",
+  rate:  4
+},{
+  year:  "Sep '19",
+  rate:  4
+},{
+  year:  "Oct '19",
+  rate:  4
+},{
+  year:  "Nov '19",
+  rate:  3.9
+},{
+  year:  "Dec '19",
+  rate:  3.9
+}
 ];
 
 # Background
@@ -174,17 +216,39 @@ __College students need professional help in their job search__
                 }}
                 >
                 <Components.ReCharts.CartesianGrid strokeDasharray="3 3" />
-                <Components.ReCharts.XAxis dataKey="name" />
+                <Components.ReCharts.XAxis dataKey="year" />
                 <Components.ReCharts.YAxis unit="$"/>
                 <Components.ReCharts.Tooltip />
                 <Components.ReCharts.Legend />
-                <Components.ReCharts.Bar dataKey="year" fill="#385A92" />
+                <Components.ReCharts.Bar dataKey="price" fill="#385A92" />
                 </Components.ReCharts.BarChart>
         </Components.ReCharts.ResponsiveContainer>
     </Components.Chakra.Box>
 
     <Components.Chakra.Box>
         __Unemployment rate of  recent graduates in US__
+
+   <Components.ReCharts.ResponsiveContainer width="100%" height={500} >
+                <Components.ReCharts.BarChart
+                width={500}
+                height={300}
+                data={opportunityUnemploymentRateChart}
+                margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                }}
+                >
+                <Components.ReCharts.CartesianGrid strokeDasharray="3 3" />
+                <Components.ReCharts.XAxis dataKey="year" />
+                <Components.ReCharts.YAxis unit="%"/>
+                <Components.ReCharts.Tooltip />
+                <Components.ReCharts.Legend />
+                <Components.ReCharts.Bar dataKey="rate" fill="#4377D4" />
+                </Components.ReCharts.BarChart>
+        </Components.ReCharts.ResponsiveContainer>
+
     </Components.Chakra.Box>
 </Components.Chakra.SimpleGrid>
 
