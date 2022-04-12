@@ -60,6 +60,9 @@ export const themeOverride = {
     styles: {
         global: {
             '.mdx-prose': {
+                a: {
+                    color: "secondary.400"
+                },
                 h1,
                 h2: {
                     fontSize: '3xl',
