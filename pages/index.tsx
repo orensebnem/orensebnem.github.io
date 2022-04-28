@@ -92,7 +92,8 @@ const IndexPage: React.FC<{
                                 rounded={15}
                                 boxShadow={"lg"}
                                 borderStyle="ridge"
-                                borderColor="gray">
+                                borderColor="white"
+                                borderWidth={0.5}>
 
 
                         <Box boxSize="100%" position="relative">
