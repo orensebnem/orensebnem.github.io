@@ -41,7 +41,7 @@ export const themeOverride = {
     colors: {
         transparent: "transparent",
         black: "#000",
-        white: "#F7F5F0",
+        white: "#FFF",
         primary: {
             50: "#F7FAFC",
             400: "#94a3b8",
