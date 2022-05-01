@@ -6,6 +6,8 @@ date: 24/01/2022
 colorPalette: 2767b2
 ---
 
+export const imagePath = "../../../images/portfolios/linkedin-student-app/";
+
 export const graduates = [
     {
         text: "Associate Degree recipients",
@@ -352,30 +354,34 @@ through the very first step of their professional life.
   <Components.Chakra.Box>
 
     <Components.Chakra.Tag colorScheme="facebook" size="lg">Platforms</Components.Chakra.Tag>
-    - Hybrid (Android + IOS)
-    - No Web Version
+    
+    Hybrid (Android + IOS)  
+    No Web Version
 
     <Components.Chakra.Tag colorScheme="facebook" size="lg">Login Features</Components.Chakra.Tag>
-    - Email user Login
-    - Gmail Login
-    - Linkedin login
+    
+    Email user Login  
+    Gmail Login  
+    Linkedin login  
 
     <Components.Chakra.Tag colorScheme="facebook" size="lg">Utility Features</Components.Chakra.Tag>
-    - Job Title Feeds 
-    - Linkedin Integration
-        - User profiles
-        - Resume build and edit
-        - Company profiles
+    
+    Job Title Feeds  
+    Linkedin Integration  
+    User profiles, Resume build and edit  
+    Company profiles
 
   </Components.Chakra.Box>
   <Components.Chakra.Box>
     <Components.Chakra.Tag colorScheme="facebook" size="lg">Admin Features</Components.Chakra.Tag>
-    - User Administration
-    - App Analytics
+    
+    User Administration  
+    App Analytics  
 
     <Components.Chakra.Tag colorScheme="facebook" size="lg">UX Features</Components.Chakra.Tag>
-    - Push notification
-    - Job Openings feed
+    
+    Push notification  
+    Job Openings feed  
 
   </Components.Chakra.Box>
 </Components.Chakra.SimpleGrid>
@@ -439,21 +445,115 @@ Projected price of Premium Student membership: $ 9.90
   </Components.Chakra.Box>
 </Components.Chakra.SimpleGrid>    
 
-# Competitors
+# Competitor Analysis
 
-## Competitor Analysis
+<Components.Chakra.Image
+    src={`${imagePath}linkedin-competitor-analysis.png`}
+    alt='Linkedin Competitor'
+/>
 
-<Components.STable
-    header={["", "Handshake", "WayUp"]}
-    rows={[
-        {columns: ["DESCRIPTION", 
-        "Job board for entry-level jobs and internships",
-        "campus-connected job search app"
-        ]},
-        {columns: ["PLATFORM", 
-        "Web Mobile","Web Mobile" 
-        ]},
-    ]} />
+# Roadmap
+
+<Components.Chakra.Image
+    src={`${imagePath}linkedin-roadmap.png`}
+    alt='Linkedin Roadmap'
+/>
+
+
+# Problem
+
+## Understanding Problem
+<Components.Chakra.Image
+    src={`${imagePath}linkedin-howMightWe.png`}
+    alt='Linkedin Best Job Seeker Experience'
+/>
+
+## Best Job Seeker Experience
+
+<Components.Chakra.Image
+    src={`${imagePath}linkedin-bestJobSeekerExperience.png`}
+    alt='Linkedin Best Job Seeker Experience'
+/>
+
+## Great Employee/Employer Matching
+
+<Components.Chakra.Image
+    src={`${imagePath}linkedin-greatEmployeeEmployerMatching.png`}
+    alt='Great Employee/Employer Matching'
+/>
+
+# Decision
+Showing relevant content to the user  
+__Rationale:__ After discovering what the user really 
+likes and what s/he is passionate about, it is 
+time to show the user the relevant job titles 
+s/he needs to learn more about.
+
+# Example User Stories
+
+## User Story 1
+
+__User Story__
+
+As a Linkedin Student App user, 
+I want to see the job title recommendations 
+matching with my major and interests, 
+so that I can start looking for a job which 
+matches not only with my skills and also with my passion.
+
+__Design__
+<Components.Chakra.Image
+    src={`${imagePath}linkedin-userStory-1.png`}
+    alt='User Story 1'
+/>
+
+__Acceptance Criteria__  
+__Given__ the user signed up to Linkedin Student App,  
+__When__ the user writes the name of the major s/he studies as “Computer Science”  
+__And__ the user marks the topics s/he is interested in “Data Analysis”, “Big Data”, “Pure Mathematics” as Data Skills, “Analytical Thinking”, “Problem Solving” as Attributes  
+__Then__ this information is saved on user’s profile  
+__And__ the user is redirected to the “Recommended Job Titles” screen showing “Data Scientist”, “Data Analyst”, “Machine Learning  Specialist” and “BI Analyst” as recommended job titles.  
+
+__Assumptions__  
+- Since the pilot product will be available only in Australia, only English language is supported.
+- Linkedin Student App links to Linkedin Profile API the profile security is supported by LinkedIn.
+- Linkedin Student App Job Title Recommendation Service should support 100 request per second.
+
+## User Story 2
+
+__User Story__
+As a Linkedin Student App user, I want to see the duties and responsibilities, average salary range and job openings in Australia about a recommended job title, so that I can learn more about the job title I am going to apply for.
+
+__Design__
+<Components.Chakra.Image
+    src={`${imagePath}linkedin-userStory-2.png`}
+    alt='User Story 2'
+/>
+
+__Acceptance Criteria__  
+__Given__ the user is on “Recommended Job Titles For You” screen  
+__And__ “Data Scientist” job title is recommended to the user,  
+__When__ the user clicks on the “Data Scientist” card,  
+__Then__ the user is redirected to the Job Title Description screen for “Data Scientist”  
+__And__ a short description for the job title is shown on the screen,  
+__And__ average salary rage is shown on the screen,   
+__And__ duties and responsibilities are shown on the screen,  
+__And__ first 5 job openings in Australia for Data Scientist role is listed on the screen.  
+
+__Assumptions__  
+Since the pilot run will be only available in Australia  
+- The average salary rage is shown for Australia and in Australian Dollars.
+- Only available job openings in Australia is listed and sorted by post date descending by default
+- Only English language is supported
+
+
+# Where do we go from here?
+
+- Suggested Linkedin E-learning courses related to favourite professions
+- Preparing trial interviews and mentorship sessions online
+- Organising career events at the universities
+- Going international
+
 
 
 
