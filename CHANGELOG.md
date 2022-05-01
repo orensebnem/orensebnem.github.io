@@ -91,3 +91,50 @@
 * **semantic version:** added ([aae3674](https://github.com/orensebnem/showcase/commit/aae3674a1e071030ddcf9b7e9ea2504ecab43144))
 * **syntax highlight:** add ([a77df8f](https://github.com/orensebnem/showcase/commit/a77df8fa4fd72cc30b7f41f32ed4a0d81a5815c3))
 * **theme:** customizable [#7](https://github.com/orensebnem/showcase/issues/7) ([805ae13](https://github.com/orensebnem/showcase/commit/805ae1392853ea730d6dee45991ccdf38ed30cf5))
+
+# 1.0.0 (2022-05-01)
+
+
+### Bug Fixes
+
+* **files:** added ([f4f8941](https://github.com/orensebnem/showcase/commit/f4f89415a12ae3e6073cce8739622711766cdcc3))
+* **files:** removed ([447a658](https://github.com/orensebnem/showcase/commit/447a658e2890d6e3735097c3652fe7da254d0d31))
+* **i18n:** remove ([eca8b40](https://github.com/orensebnem/showcase/commit/eca8b40542e759990703b576dd7f36f418ba5784))
+* **image:** added ([d9bb89a](https://github.com/orensebnem/showcase/commit/d9bb89a733dd4f6dd491741278ca122de1ace856))
+* **journals:** remove ([a9a3529](https://github.com/orensebnem/showcase/commit/a9a35295f41c78a4875b6fd8c5b2a340b39f6386))
+* **next.config.js:** remove assetPrefix ([f8d0229](https://github.com/orensebnem/showcase/commit/f8d0229e4f26af641ae2c832d5743b0619efb28c))
+* **nojekyll:** move file to root folder ([8b54e1c](https://github.com/orensebnem/showcase/commit/8b54e1c0f0ca2ebe44795d377086e2d4a270bbb8))
+* **nojekyll:** move to the public folder ([8997d80](https://github.com/orensebnem/showcase/commit/8997d8012ee95ac56fe49a8116d3c27e7b8cc505))
+* **package.json:** add export script ([86622c2](https://github.com/orensebnem/showcase/commit/86622c2f42faf6c53b525c39950440690fe27897))
+* **package.json:** remove name for css js link issue ([eb39f7a](https://github.com/orensebnem/showcase/commit/eb39f7a44ac15d56aa69cf89619446d3d9563258))
+* **package.json:** remove version ([717b06b](https://github.com/orensebnem/showcase/commit/717b06bdbc3c94c2e46eafcc115bfcff99e08761))
+* **portfolios:** shadow ([c7e9e25](https://github.com/orensebnem/showcase/commit/c7e9e251a46cbf84f2d61c45044368385d8f5feb))
+* **unused files:** delete files ([1352689](https://github.com/orensebnem/showcase/commit/135268949efbf07b2808dd72c522cba184f5d06f))
+
+
+### Features
+
+* **font:** hi title change to roboto ([f9c6e84](https://github.com/orensebnem/showcase/commit/f9c6e849bb0e65fc07fe9d910a17cc8c3b053956))
+* **github-actions:** implement ([b95cf2c](https://github.com/orensebnem/showcase/commit/b95cf2cd525fd8afc292d81e2ec32c50475c3fc1))
+* **homepage:** add image and text ([792d3ed](https://github.com/orensebnem/showcase/commit/792d3eddf45720cc5a5745e1a13bf6dbee87b790))
+* **homepage:** implement / data / dynamic ([22d24d6](https://github.com/orensebnem/showcase/commit/22d24d634c185cf4c405a12db8907e58200fd994))
+* **index:** change page style ([c8ea361](https://github.com/orensebnem/showcase/commit/c8ea361c8138797fedf8d6b43c76b2dc414c862d))
+* **index:** change page style ([8460cca](https://github.com/orensebnem/showcase/commit/8460cca115f4c472fdb1b9db8417e1474332b7c9))
+* **linked student app:** updated ([8b9bf84](https://github.com/orensebnem/showcase/commit/8b9bf8492d8db6b96b35bd84b3525b883c6ef9a8))
+* **linkedin student app:** add unemployment rate chart ([8fcd8b1](https://github.com/orensebnem/showcase/commit/8fcd8b1a9fe5c5dd3f60fda05cfca4438aacfb44))
+* **linkedin student app:** portfolio added ([70057d2](https://github.com/orensebnem/showcase/commit/70057d2dd68cbe70fa9b225d589636e4db7795f4))
+* **new version:** 1.4.1 updated ([b167ece](https://github.com/orensebnem/showcase/commit/b167ece06f7503fe76904563b96a5ff775f9a2ef))
+* **new version:** 1.5.0 updated ([3c0c787](https://github.com/orensebnem/showcase/commit/3c0c787bc44072e18a3a85074c1e4e774004eeb6))
+* **new version:** 1.5.0 updated ([14c62bb](https://github.com/orensebnem/showcase/commit/14c62bb1784e37283e18ff8056fc518d54e7ae22))
+* **new version:** 1.6.0 updated ([9f3fbc6](https://github.com/orensebnem/showcase/commit/9f3fbc697818298a766499815eece26c75ee5448))
+* **personel image:** added ([ddde978](https://github.com/orensebnem/showcase/commit/ddde97894359d1f3374117673f0396f601f3e415))
+* **portfolios:** add color palette for titles ([222cf34](https://github.com/orensebnem/showcase/commit/222cf343bf57a367652fa86287265049d7963b8c))
+* **project:** implement / i18n ([de147ee](https://github.com/orensebnem/showcase/commit/de147ee9f879ec8e2e7e4e02ed0f685117535318))
+* **scootie:** add images ([74b665b](https://github.com/orensebnem/showcase/commit/74b665bc5850e2970ac9845ef97039bdae4bf80a))
+* **scootie:** app ([00a60c8](https://github.com/orensebnem/showcase/commit/00a60c84b3fa226c0e252631de1da0e47c077da4))
+* **scootie:** journey ([3ac51d6](https://github.com/orensebnem/showcase/commit/3ac51d687556bd1ce5fe5053f5421103fde2c8ea))
+* **semantic git:** added ([9afe533](https://github.com/orensebnem/showcase/commit/9afe5339c442e47cf37069ec74dccc3f4ed603cb))
+* **semantic version:** added ([710476b](https://github.com/orensebnem/showcase/commit/710476b5b8bcc858d4bdd24a4609063a2870dce4))
+* **semantic version:** added ([aae3674](https://github.com/orensebnem/showcase/commit/aae3674a1e071030ddcf9b7e9ea2504ecab43144))
+* **syntax highlight:** add ([a77df8f](https://github.com/orensebnem/showcase/commit/a77df8fa4fd72cc30b7f41f32ed4a0d81a5815c3))
+* **theme:** customizable [#7](https://github.com/orensebnem/showcase/issues/7) ([805ae13](https://github.com/orensebnem/showcase/commit/805ae1392853ea730d6dee45991ccdf38ed30cf5))
