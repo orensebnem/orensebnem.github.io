@@ -14,3 +14,4 @@ in dev mode `npm run dev`
 
 ## TECH STACK
 react
+chakra
