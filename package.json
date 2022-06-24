@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "source $HOME/.nvm/nvm.sh; nvm use 15.10.0 && next",
-    "build": "next build && next export",
+    "build": "source $HOME/.nvm/nvm.sh; nvm use 15.10.0 && next build && next export",
     "start": "next start",
     "export": "next export",
     "type-check": "tsc"

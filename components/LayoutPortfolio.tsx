@@ -1,6 +1,6 @@
 import React, {FC, ReactNode} from 'react'
 import Head from 'next/head'
-import {Center, Container, Flex, Text} from '@chakra-ui/react'
+import {Center, Container, Flex, Link, Text} from '@chakra-ui/react'
 import {ArrowBackIcon} from "@chakra-ui/icons";
 import {useRouter} from 'next/router'
 import Footer from "./pages/footer";

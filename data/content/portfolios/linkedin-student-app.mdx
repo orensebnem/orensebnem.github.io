@@ -6,7 +6,7 @@ date: 24/01/2022
 colorPalette: 2767b2
 ---
 
-export const imagePath = "../../../images/portfolios/linkedin-student-app/";
+export const imagePath = "../../images/portfolios/linkedin-student-app/";
 
 export const graduates = [
     {
@@ -130,12 +130,12 @@ export const opportunityUnemploymentRateChart = [{
 
 # Background
 
-[Linkedin](https://linkedin.com/) is full of job opportunities 
-for any level of positions. Our corporate customers complain for not 
+[Linkedin](https://linkedin.com/) is full of job opportunities
+for any level of positions. Our corporate customers complain for not
 reaching our right applicants for entry level positions
 
-The new graduates are pretty overwhelmed 
-and frustrated with being inexperienced 
+The new graduates are pretty overwhelmed
+and frustrated with being inexperienced
 in job seeking.
 
 __What new grads need is more than a jobs directory.__
@@ -151,7 +151,7 @@ Our customised solution for Students will provide a full support to the new grad
 * The destructive effect of outstanding student loan debt on economics (around $1.6 Trillion) (Source: [Forbes](https://forbes.com))
 
 __College students need professional help in their job search__
-* A guide to tell them what they are able to do 
+* A guide to tell them what they are able to do
 * A trainer to teach them how to present their skills
 
 ## Opportunity
@@ -159,27 +159,27 @@ __College students need professional help in their job search__
 <Components.Chakra.SimpleGrid columns={[1, null, 2]} spacing='40px'>
     <Components.Chakra.Box>
         __Number of Graduates in US in 2019__
-      
+
         {graduates.map((graduate)=> {
             return <Components.Chakra.SimpleGrid columns={2}>
-                <Components.Chakra.Box w={graduate.graphWidth} 
-                                       h='120px' 
-                                       bgGradient={`linear(to-r, ${graduate.colorFrom}, ${graduate.colorTo} )`} 
-                                       borderRadius="lg" 
+                <Components.Chakra.Box w={graduate.graphWidth}
+                                       h='120px'
+                                       bgGradient={`linear(to-r, ${graduate.colorFrom}, ${graduate.colorTo} )`}
+                                       borderRadius="lg"
                                        marginLeft={4}
                                        marginBottom={2}/>
-                    
+
                             <p>{graduate.text} <br/><b>{graduate.number}</b></p>
-                                
-            </Components.Chakra.SimpleGrid>     
+
+            </Components.Chakra.SimpleGrid>
         })}
-         
+
         <Components.Chakra.SimpleGrid columns={1}>
             <Components.Chakra.Box w='100%' h='100px' bgGradient='linear(to-r, #03003F, #03003F )' borderRadius="lg" marginLeft={4}>
                 <p style={{color: "white", textAlign: "center"}}>NUMBER OF GRADUATES</p>
                 <h3 style={{color: "white", textAlign: "center", marginTop: "-10"}}>3.9 million</h3>
-            </Components.Chakra.Box>       
-        </Components.Chakra.SimpleGrid>        
+            </Components.Chakra.Box>
+        </Components.Chakra.SimpleGrid>
 
     </Components.Chakra.Box>
 
@@ -256,11 +256,11 @@ __College students need professional help in their job search__
 
 <Components.Chakra.SimpleGrid columns={[1, null, 2]} spacing='40px'>
   <Components.Chakra.Box>
-    The app aims to help the user find his/her 
-    first job out of school, so the target market 
+    The app aims to help the user find his/her
+    first job out of school, so the target market
     is the new grads or soon-to-be-grads.
-    
-    According to 2019 data, the number of new grads is 3.9 million in 2019 only in US. 
+
+    According to 2019 data, the number of new grads is 3.9 million in 2019 only in US.
     (Source:[educationdata.org](educationdata.org))
 
     __Two types of subscription will be available:__
@@ -273,14 +273,14 @@ __College students need professional help in their job search__
     padding: 20,
   }}>
 
-    3.9 million new grads in the US  
-    $ 9.90 per month  
+    3.9 million new grads in the US
+    $ 9.90 per month
 
-    __Total Addressable Market:__  
-    = ARPU x total number of users in the market  
-    = ($9.90 per month) x (12 months) x3.9 million   
-    = $ 463.32 million  
-    = 0.463 billion  
+    __Total Addressable Market:__
+    = ARPU x total number of users in the market
+    = ($9.90 per month) x (12 months) x3.9 million
+    = $ 463.32 million
+    = 0.463 billion
 
   </Components.Chakra.Box>
 
@@ -288,8 +288,8 @@ __College students need professional help in their job search__
 
 # Proposal
 
-Linkedin Student App will be a tailored solution 
-for new grads or soon-to-be-grads to guide them 
+Linkedin Student App will be a tailored solution
+for new grads or soon-to-be-grads to guide them
 through the very first step of their professional life.
 
 - __A mobile app__ to increase retention for daily use
@@ -312,15 +312,15 @@ through the very first step of their professional life.
       <span style={{fontSize: 40}}>Free</span><br/>
       <span style={{fontSize: 50}}>$0</span>
     </div>
-    
-    ✔ LinkedIn Student Resume Builder  
-    ✔ Get 5 career tips everyday   
-    ✔ Free Soft Skill trainings in LinkedIn Learning  
-    ✔ Who’s viewed my profile  
-    ✔ Applicant insights  
-    ✔ Instant access to salary insights  
-    ✔ Training suggestions based on applied positions  
-    ✔ Online training videos  
+
+    ✔ LinkedIn Student Resume Builder
+    ✔ Get 5 career tips everyday
+    ✔ Free Soft Skill trainings in LinkedIn Learning
+    ✔ Who’s viewed my profile
+    ✔ Applicant insights
+    ✔ Instant access to salary insights
+    ✔ Training suggestions based on applied positions
+    ✔ Online training videos
 
   </Components.Chakra.Box>
 
@@ -335,11 +335,11 @@ through the very first step of their professional life.
       <span style={{fontSize: 18}}>per month</span>
     </div>
 
-    ✔ Featured Applicant   
-    ✔ 5 Free InMail per month  
-    ✔ Personal Career Coach  
-    ✔ 10% discount at LinkedIn Learning  
-    ✔  Unlimited profile search  
+    ✔ Featured Applicant
+    ✔ 5 Free InMail per month
+    ✔ Personal Career Coach
+    ✔ 10% discount at LinkedIn Learning
+    ✔  Unlimited profile search
 
   </Components.Chakra.Box>
 
@@ -354,68 +354,68 @@ through the very first step of their professional life.
   <Components.Chakra.Box>
 
     <Components.Chakra.Tag colorScheme="facebook" size="lg">Platforms</Components.Chakra.Tag>
-    
-    Hybrid (Android + IOS)  
+
+    Hybrid (Android + IOS)
     No Web Version
 
     <Components.Chakra.Tag colorScheme="facebook" size="lg">Login Features</Components.Chakra.Tag>
-    
-    Email user Login  
-    Gmail Login  
-    Linkedin login  
+
+    Email user Login
+    Gmail Login
+    Linkedin login
 
     <Components.Chakra.Tag colorScheme="facebook" size="lg">Utility Features</Components.Chakra.Tag>
-    
-    Job Title Feeds  
-    Linkedin Integration  
-    User profiles, Resume build and edit  
+
+    Job Title Feeds
+    Linkedin Integration
+    User profiles, Resume build and edit
     Company profiles
 
   </Components.Chakra.Box>
   <Components.Chakra.Box>
     <Components.Chakra.Tag colorScheme="facebook" size="lg">Admin Features</Components.Chakra.Tag>
-    
-    User Administration  
-    App Analytics  
+
+    User Administration
+    App Analytics
 
     <Components.Chakra.Tag colorScheme="facebook" size="lg">UX Features</Components.Chakra.Tag>
-    
-    Push notification  
-    Job Openings feed  
+
+    Push notification
+    Job Openings feed
 
   </Components.Chakra.Box>
 </Components.Chakra.SimpleGrid>
-  
+
 
 ## Development Costs
-6 months of Development x 10K x 15 MVP features = $ 900 K 
+6 months of Development x 10K x 15 MVP features = $ 900 K
 
 ## Revenue
-Acc to  the Pew Research Center 2018 Social Media Use study 
-__50% of college graduates__ in the US has a Linkedin account. 
-From Linkedin statistics, __39% of Linkedin users are paid customers.__ 
+Acc to  the Pew Research Center 2018 Social Media Use study
+__50% of college graduates__ in the US has a Linkedin account.
+From Linkedin statistics, __39% of Linkedin users are paid customers.__
 (source: [kinsta.com](https://kinsta.com))
 
-With a similar approach, __if 40%__ of this amount subscribes to 
+With a similar approach, __if 40%__ of this amount subscribes to
 LinkedIn Student Premium service.
 Number of graduates in US : 3.9 million
 Projected price of Premium Student membership: $ 9.90
 
-($9.90 per month) x (12 months) x 3.9 million x 50% x 40%  
-= $ 92 million per year  
+($9.90 per month) x (12 months) x 3.9 million x 50% x 40%
+= $ 92 million per year
 = __$ 0.092 billion per year__
 
 # Measurement
 
 <Components.Chakra.SimpleGrid columns={2}>
-  <Components.Chakra.Box w="100%" 
-                          h='420px' 
-                          bgGradient={`linear(to-r, #79B9D2 , #4295A4 )`} 
-                          borderRadius="lg" 
+  <Components.Chakra.Box w="100%"
+                          h='420px'
+                          bgGradient={`linear(to-r, #79B9D2 , #4295A4 )`}
+                          borderRadius="lg"
                           marginLeft={4}
                           marginBottom={2}>
     <Components.Chakra.Center  w='90%' h='100%' color="white" textAlign="center">
-                OKR 1:  
+                OKR 1:
                 Brand awareness and user retention
     </Components.Chakra.Center>
   </Components.Chakra.Box>
@@ -424,17 +424,17 @@ Projected price of Premium Student membership: $ 9.90
       - __KPI2:__ 20% of the signed up user will be Subscribed to Premium Student Account by the end of Q2
       - __KPI3:__ Number of created Resumes through Resume Builder with LinkedIn Student App Account will 80%
   </Components.Chakra.Box>
-</Components.Chakra.SimpleGrid>     
+</Components.Chakra.SimpleGrid>
 
 <Components.Chakra.SimpleGrid columns={2}>
-  <Components.Chakra.Box w="100%" 
-                          h='420px' 
-                          bgGradient={`linear(to-r, #5984E1 , #2955C5 )`} 
-                          borderRadius="lg" 
+  <Components.Chakra.Box w="100%"
+                          h='420px'
+                          bgGradient={`linear(to-r, #5984E1 , #2955C5 )`}
+                          borderRadius="lg"
                           marginLeft={4}
                           marginBottom={2}>
     <Components.Chakra.Center  w='90%' h='100%' color="white" textAlign="center">
-                OKR 2:  
+                OKR 2:
                 New grads will be hired through the advertisements in LinkedIn
     </Components.Chakra.Center>
   </Components.Chakra.Box>
@@ -443,7 +443,7 @@ Projected price of Premium Student membership: $ 9.90
       - __KPI2:__ Average number of screens visited on a session per user will be 10 by Q3
       - __KPI3:__ Number of users who changes their employment status to “employed” by Q3 will be 50% of total user
   </Components.Chakra.Box>
-</Components.Chakra.SimpleGrid>    
+</Components.Chakra.SimpleGrid>
 
 # Competitor Analysis
 
@@ -483,10 +483,10 @@ Projected price of Premium Student membership: $ 9.90
 />
 
 # Decision
-Showing relevant content to the user  
-__Rationale:__ After discovering what the user really 
-likes and what s/he is passionate about, it is 
-time to show the user the relevant job titles 
+Showing relevant content to the user
+__Rationale:__ After discovering what the user really
+likes and what s/he is passionate about, it is
+time to show the user the relevant job titles
 s/he needs to learn more about.
 
 # Example User Stories
@@ -495,10 +495,10 @@ s/he needs to learn more about.
 
 __User Story__
 
-As a Linkedin Student App user, 
-I want to see the job title recommendations 
-matching with my major and interests, 
-so that I can start looking for a job which 
+As a Linkedin Student App user,
+I want to see the job title recommendations
+matching with my major and interests,
+so that I can start looking for a job which
 matches not only with my skills and also with my passion.
 
 __Design__
@@ -507,14 +507,14 @@ __Design__
     alt='User Story 1'
 />
 
-__Acceptance Criteria__  
-__Given__ the user signed up to Linkedin Student App,  
-__When__ the user writes the name of the major s/he studies as “Computer Science”  
-__And__ the user marks the topics s/he is interested in “Data Analysis”, “Big Data”, “Pure Mathematics” as Data Skills, “Analytical Thinking”, “Problem Solving” as Attributes  
-__Then__ this information is saved on user’s profile  
-__And__ the user is redirected to the “Recommended Job Titles” screen showing “Data Scientist”, “Data Analyst”, “Machine Learning  Specialist” and “BI Analyst” as recommended job titles.  
+__Acceptance Criteria__
+__Given__ the user signed up to Linkedin Student App,
+__When__ the user writes the name of the major s/he studies as “Computer Science”
+__And__ the user marks the topics s/he is interested in “Data Analysis”, “Big Data”, “Pure Mathematics” as Data Skills, “Analytical Thinking”, “Problem Solving” as Attributes
+__Then__ this information is saved on user’s profile
+__And__ the user is redirected to the “Recommended Job Titles” screen showing “Data Scientist”, “Data Analyst”, “Machine Learning  Specialist” and “BI Analyst” as recommended job titles.
 
-__Assumptions__  
+__Assumptions__
 - Since the pilot product will be available only in Australia, only English language is supported.
 - Linkedin Student App links to Linkedin Profile API the profile security is supported by LinkedIn.
 - Linkedin Student App Job Title Recommendation Service should support 100 request per second.
@@ -530,18 +530,18 @@ __Design__
     alt='User Story 2'
 />
 
-__Acceptance Criteria__  
-__Given__ the user is on “Recommended Job Titles For You” screen  
-__And__ “Data Scientist” job title is recommended to the user,  
-__When__ the user clicks on the “Data Scientist” card,  
-__Then__ the user is redirected to the Job Title Description screen for “Data Scientist”  
-__And__ a short description for the job title is shown on the screen,  
-__And__ average salary rage is shown on the screen,   
-__And__ duties and responsibilities are shown on the screen,  
-__And__ first 5 job openings in Australia for Data Scientist role is listed on the screen.  
+__Acceptance Criteria__
+__Given__ the user is on “Recommended Job Titles For You” screen
+__And__ “Data Scientist” job title is recommended to the user,
+__When__ the user clicks on the “Data Scientist” card,
+__Then__ the user is redirected to the Job Title Description screen for “Data Scientist”
+__And__ a short description for the job title is shown on the screen,
+__And__ average salary rage is shown on the screen,
+__And__ duties and responsibilities are shown on the screen,
+__And__ first 5 job openings in Australia for Data Scientist role is listed on the screen.
 
-__Assumptions__  
-Since the pilot run will be only available in Australia  
+__Assumptions__
+Since the pilot run will be only available in Australia
 - The average salary rage is shown for Australia and in Australian Dollars.
 - Only available job openings in Australia is listed and sorted by post date descending by default
 - Only English language is supported
@@ -558,6 +558,6 @@ Since the pilot run will be only available in Australia
 
 
 {/*<iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)"}}
-width="800" 
-height="450" 
+width="800"
+height="450"
 src={`https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLTlBiIw8VVh5fmqm1R8qR9%2FLinkedin-Student-App%3Fnode-id%3D0%253A1`} allowfullscreen={true}></iframe>*/}
