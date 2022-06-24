@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.0.0...v1.0.1) (2022-06-24)
+
+
+### Bug Fixes
+
+* **package.json:** dev-local, build-local ([a54ace9](https://github.com/orensebnem/orensebnem.github.io/commit/a54ace9925e47d6a2671fe4b00eff014cd589603))
+* **site:** links, fonts ([9d54de6](https://github.com/orensebnem/orensebnem.github.io/commit/9d54de69270702941deefb5efd012c1b66479ca5))
+
 # 1.0.0 (2022-05-01)
 
 
