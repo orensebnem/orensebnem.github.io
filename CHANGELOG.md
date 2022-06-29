@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/orensebnem/orensebnem.github.io/compare/v1.0.1...v1.0.2) (2022-06-29)
+
+
+### Bug Fixes
+
+* **ci/cd:** build phase ([d95a8fa](https://github.com/orensebnem/orensebnem.github.io/commit/d95a8fa27d003186ab37d499f2e948e661532973))
+
 ## [1.0.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.0.0...v1.0.1) (2022-06-24)
 
 
