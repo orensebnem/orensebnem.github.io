@@ -9,7 +9,9 @@
     "build-local": "source $HOME/.nvm/nvm.sh; nvm use 15.10.0 && next build && next export",
     "start": "next start",
     "export": "next export",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "storybook": "source $HOME/.nvm/nvm.sh; nvm use 15.10.0 && start-storybook -p 6006",
+    "build-storybook": "source $HOME/.nvm/nvm.sh; nvm use 15.10.0 && build-storybook"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
@@ -41,16 +43,26 @@
     "unified": "^10.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.5",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.1",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.2",
     "@semantic-release/npm": "^8.0.3",
     "@semantic-release/release-notes-generator": "^10.0.2",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack4": "^6.5.9",
+    "@storybook/manager-webpack4": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.1",
     "autoprefixer": "^10.3.7",
+    "babel-loader": "^8.2.5",
     "postcss": "^8.3.9",
     "react-error-overlay": "^6.0.10",
     "semantic-release": "^18.0.0",

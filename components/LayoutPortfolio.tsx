@@ -26,7 +26,7 @@ const LayoutPortfolio: FC<LayoutJournalProps> = ({children, title}) => {
             </header>
             <Flex direction="row">
                 <ArrowBackIcon boxSize={['5', '10', '20']}
-                               color="#5DB075"
+                               color="primary"
                                alignSelf="center"
                                _hover={{
                                    cursor: "pointer",

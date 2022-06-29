@@ -15,6 +15,9 @@ export const themeOverride = {
         xl: "1200px",
         "2xl": "1536px",
     },
+    backgroundColor: {
+        primary: "red",
+    },
     fonts: {
         caveat: "Caveat",
         primary: "Roboto",
@@ -42,16 +45,51 @@ export const themeOverride = {
         transparent: "transparent",
         black: "#000",
         white: "#FFF",
-        primary: {
-            50: "#F7FAFC",
-            400: "#94a3b8",
-            600: "#475569",
-            800: "#1A202C",
-            900: "#18181b",
+        primary: "#68A7AD",
+        secondary: "#FFF",
+        accent: "#E5CB9F",
+        text: "#FFF",
+    },
+    lineHeight: {
+        xs: "0.75rem",
+        sm: "0.875rem",
+        md: "1rem",
+        lg: "1.125rem",
+        xl: "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem",
+        "5xl": "3rem",
+        "6xl": "3.75rem",
+        "7xl": "4.5rem",
+        "8xl": "6rem",
+        "9xl": "8rem",
+    },
+    components: {
+        Text: {
+            variants: {
+                default: {
+                    color: "text",
+                    transition: "color 0.5s ease"
+                },
+                hover: {
+                    color: "accent",
+                    transition: "color 0.5s ease"
+                }
+            }
         },
-        secondary: {
-            400: "#5DB075",
-        },
+        Box: {
+            variants: {
+                default: {
+                    backgroundColor: "primary",
+                    transition: "background-color 0.5s ease"
+                },
+                hover: {
+                    backgroundColor: "accent",
+                    transition: "background-color 0.5s ease"
+                }
+            }
+        }
     },
     config: {
         initialColorMode: "light",

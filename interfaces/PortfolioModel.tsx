@@ -7,11 +7,12 @@ export interface Frontmatter {
   readMore: string;
   image?: string;
   colorPalette: string;
+  tags: string[];
 }
 
 export default interface PortfolioModel {
   code: string;
   slug: string;
   frontmatter: Frontmatter;
-  
+
 }
