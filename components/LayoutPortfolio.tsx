@@ -26,11 +26,11 @@ const LayoutPortfolio: FC<LayoutJournalProps> = ({children, title}) => {
             </header>
             <Flex direction="row">
                 <ArrowBackIcon boxSize={['5', '10', '20']}
-                               color="primary"
+                               color="secondary"
                                alignSelf="center"
                                _hover={{
                                    cursor: "pointer",
-                                   color: "black"
+                                   color: "accent"
                                }}
 
                                onClick={() => router.back()}/>

@@ -45,9 +45,9 @@ export const themeOverride = {
         transparent: "transparent",
         black: "#000",
         white: "#FFF",
-        primary: "#68A7AD",
-        secondary: "#FFF",
-        accent: "#E5CB9F",
+        primary: "azure",
+        secondary: "#000",
+        accent: "cadetblue",
         text: "#FFF",
     },
     lineHeight: {

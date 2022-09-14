@@ -6,7 +6,7 @@ const SHeaderSubtitle = () =>{
     return(
         <Text
             fontSize={["md", "2xl", "4xl", "5xl"]}
-            color="#e5cb9f"
+            color="accent"
             fontFamily={"secondary"}
             fontWeight={900}>
             {indexPageData.portfolios["en-US"]}

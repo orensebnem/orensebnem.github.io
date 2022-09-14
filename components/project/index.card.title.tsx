@@ -6,6 +6,7 @@ const SProjectCardTitle = ({title, variant = ComponentVariant.default}:
     return (
         <Text
             fontFamily="primary"
+            color="primary"
             fontSize={["xl", "5xl", "5xl", "5xl"]}
             lineHeight="xs"
             fontWeight={900}

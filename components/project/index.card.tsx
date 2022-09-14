@@ -15,13 +15,13 @@ const SProjectCard = ({portfolio}: { portfolio: PortfolioModel }) => {
         <Link href={`portfolios/${portfolio.slug}`}>
             <Box as="button"
                  display="flex"
-                 alignItems="flex-end"
+                 alignItems="center"
                  flexDirection="row"
                  padding="1em"
                  borderRadius='3xl'
-                 w={[null, "100%", "100%", "25em"]}
+                 w={[null, "100%", "80%", "25em"]}
                  height="35em"
-                 backgroundImage="radial-gradient(circle at top left , #68A7AD 40%, #E5CB9F 10%, transparent 50%)"
+                 backgroundImage="radial-gradient(circle at top left , cadetblue 40%, #000 10%, transparent 50%)"
                  transition="background-size .5s, color .5s"
                  backgroundRepeat={"no-repeat"}
                  backgroundSize="0 0"
@@ -31,7 +31,7 @@ const SProjectCard = ({portfolio}: { portfolio: PortfolioModel }) => {
                  _before={{
                      content: '""',
                      position: "absolute",
-                     width: [null, "100%", "100%", "25em"],
+                     width: [null, "100%", "80%", "25em"],
                      margin: -6,
                      borderRadius: '3xl',
                      backgroundImage: `linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/${portfolio.frontmatter.image})`,

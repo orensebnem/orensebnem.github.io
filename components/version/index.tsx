@@ -6,6 +6,7 @@ const SVersion = () => {
     return (
         <Flex m={2} justifyContent={"space-between"}>
             <Text
+                color="text"
                 fontSize={["md", "lg", "xl", "2xl"]}
                 fontFamily={"caveat"}
                 right={"0px"}
