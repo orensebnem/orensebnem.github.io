@@ -18,7 +18,10 @@ export const SLogo = ({name, surname}: SLogoProps) => {
                 color="white"
                 bgColor="#6DA6E0"
                 src="/"/>
-            <Text>{name} {surname}</Text>
+            <Text
+                fontWeight="bold">
+                {name} {surname}
+            </Text>
         </Stack>
     )
 

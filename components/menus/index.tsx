@@ -7,7 +7,7 @@ interface SMenusProps {
 
 export const SMenus = ({data}: SMenusProps) => {
     return (
-        <Stack direction="row">
+        <Stack direction="row" gap={10}>
             {data.map((menu) => {
                 return <SMenu key={menu.label} label={menu.label}/>
             })}

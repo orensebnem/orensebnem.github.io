@@ -4,20 +4,22 @@ import {SMenus} from "../menus";
 import {SMenuProps} from "../menus/index.menu";
 
 interface SHeader2Props {
-    sLogoData: SLogoProps;
-    sMenusData: SMenuProps[];
+    sLogoProps: SLogoProps;
+    sMenusProps: SMenuProps[];
 }
 
 export const SHeader2 = ({
-                             sLogoData,
-                             sMenusData
+                             sLogoProps,
+                             sMenusProps
                          }: SHeader2Props) => {
     return (
         <Flex align="center"
-              justifyContent="space-around">
-            <SLogo name={sLogoData.name}
-                   surname={sLogoData.surname}/>
-            <SMenus data={sMenusData}/>
+              justifyContent="space-between"
+              justifyItems="space-between"
+              margin={10}>
+            <SLogo name={sLogoProps.name}
+                   surname={sLogoProps.surname}/>
+            <SMenus data={sMenusProps}/>
         </Flex>
     )
 }

@@ -16,11 +16,11 @@ const Template:
 
 export const Default = Template.bind({});
 Default.args = {
-    sLogoData: {
+    sLogoProps: {
         name: "Sebnem",
         surname: "Oren"
     },
-    sMenusData: [{
+    sMenusProps: [{
         label: "about me"
     }, {
         label: "resume"
