@@ -1,5 +1,5 @@
 import SMenu, {SMenuProps} from "./index.menu";
-import {SimpleGrid} from "@chakra-ui/react";
+import {Stack} from "@chakra-ui/react";
 
 interface SMenusProps {
     data: SMenuProps[]
@@ -7,10 +7,10 @@ interface SMenusProps {
 
 export const SMenus = ({data}: SMenusProps) => {
     return (
-        <SimpleGrid columns={10} spacing={10}>
+        <Stack direction="row">
             {data.map((menu) => {
                 return <SMenu key={menu.label} label={menu.label}/>
             })}
-        </SimpleGrid>
+        </Stack>
     )
 }
