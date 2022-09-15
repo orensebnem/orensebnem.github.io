@@ -8,7 +8,7 @@ const SProjectCardTags = ({
                               variant = ComponentVariant.default
                           }: { tags: string[], variant: ComponentVariant }) => {
     return (<Box display="flex">{tags.map((tag) => {
-        return <SProjectCardTag tag={tag} variant={variant}/>
+        return <SProjectCardTag key={tag} tag={tag} variant={variant}/>
     })}</Box>)
 }
 

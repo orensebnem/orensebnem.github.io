@@ -19,7 +19,9 @@ const SProjectCards: React.FC<{
                     gap="20"
                     wrap="wrap">
                     {portfolios.map((portfolio, index) => {
-                        return <SProjectCard portfolio={portfolio}/>
+                        return <SProjectCard
+                            key={index}
+                            portfolio={portfolio}/>
                     })}
                 </Flex>
             </Center>

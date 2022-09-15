@@ -9,7 +9,7 @@ export const SMenus = ({data}: SMenusProps) => {
     return (
         <SimpleGrid columns={10} spacing={10}>
             {data.map((menu) => {
-                return <div>{menu.label}</div>
+                return <div key={menu.label}>{menu.label}</div>
             })}
         </SimpleGrid>
     )
