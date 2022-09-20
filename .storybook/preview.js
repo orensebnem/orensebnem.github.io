@@ -12,3 +12,13 @@ export const parameters = {
     },
   },
 }
+
+import Image from 'next/image';
+
+Image.propTypes = {
+  unoptimized: null,
+};
+
+Image.defaultProps = {
+  unoptimized: true,
+};
