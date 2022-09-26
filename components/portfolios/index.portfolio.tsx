@@ -33,6 +33,14 @@ export const SPortfolio = ({
             })
     }, [])
 
+    const handleMouseOnEnter = () => {
+        setOnHover(true);
+    }
+
+    const handleMouseOnLeave = () => {
+        setOnHover(false);
+    }
+
     const options = {
         animationData: animation,
         loop: onHover,
@@ -40,6 +48,7 @@ export const SPortfolio = ({
             height: "100%"
         },
     };
+
 
     const {View, pause} = useLottie(options);
     !onHover && pause();
@@ -49,12 +58,15 @@ export const SPortfolio = ({
             maxW={[150, 200, 300, 350]}
             w={'full'}
             bg={useColorModeValue('gray.100', 'gray.900')}
+            _hover={{
+                cursor: "pointer"
+            }}
             boxShadow='l'
             rounded={'md'}
             p={6}
             overflow={'hidden'}
-            onMouseEnter={() => setOnHover(true)}
-            onMouseLeave={() => setOnHover(false)}>
+            onMouseEnter={handleMouseOnEnter}
+            onMouseLeave={handleMouseOnLeave}>
 
             <Box
                 h={[75, 100, 150, 175]}
