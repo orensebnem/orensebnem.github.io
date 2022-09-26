@@ -22,12 +22,12 @@ export const SPortfolio = ({
     const [onHover, setOnHover] = useState(false);
     const [animation, setAnimation] = useState("");
 
-    const getMarkdown = async (page) => {
+    const getHeaderImage = async (page) => {
         return await require(`../../public/images/portfolios/${page}/header.json`)
     }
 
     useEffect(() => {
-        getMarkdown(headerAnimation)
+        getHeaderImage(headerAnimation)
             .then((result) => {
                 setAnimation(result);
             })
