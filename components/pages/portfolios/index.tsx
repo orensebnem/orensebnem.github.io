@@ -1,6 +1,5 @@
 import {SPortfolios} from "../../portfolios";
 import {SLayout} from "../../layout/index";
-import {Container} from "@chakra-ui/react";
 
 
 export const PortfoliosPage = () => {
@@ -8,7 +7,7 @@ export const PortfoliosPage = () => {
     const portfoliosData = [{
         title: "Scootie",
         description: "In two years Ooup will be the most preferred and convenient transportation method in Europe",
-        headerImageSrc: '/images/portfolios/scootie-mobile-app',
+        headerAnimation: require("/public/images/portfolios/scootie-mobile-app/header.json"),
         badgesProps: {
             data: ["mobile"]
         }
@@ -16,7 +15,7 @@ export const PortfoliosPage = () => {
         {
             title: "Playtime",
             description: "Help working parents work collaboratively to keep their children busy and happy with playgroup sessions during school holidays",
-            headerImageSrc: '/images/portfolios/playtime-mobile-app',
+            headerAnimation: require("/public/images/portfolios/playtime-mobile-app/header.json"),
             badgesProps: {
                 data: ["mobile"]
             }
@@ -24,7 +23,7 @@ export const PortfoliosPage = () => {
         {
             title: "Linkedin Student",
             description: "The new graduates are pretty overwhelmed and frustrated with being inexperienced in job seeking.",
-            headerImageSrc: '/images/portfolios/linkedin-student-app',
+            headerAnimation: require("/public/images/portfolios/linkedin-student-app/header.json"),
             badgesProps: {
                 data: ["mobile"]
             }

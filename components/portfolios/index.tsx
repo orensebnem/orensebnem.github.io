@@ -14,14 +14,14 @@ export const SPortfolios = ({data}: SPortfoliosProps) => {
             mt={20}>
             {data.map((item) => {
                 const {
-                    headerImageSrc,
+                    headerAnimation,
                     title,
                     description,
                     badgesProps
                 } = item;
 
                 return <SPortfolio
-                    headerImageSrc={headerImageSrc}
+                    headerAnimation={headerAnimation}
                     title={title}
                     description={description}
                     badgesProps={badgesProps}/>

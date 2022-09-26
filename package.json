@@ -30,6 +30,7 @@
     "gray-matter": "^4.0.3",
     "hamburger-react": "^2.5.0",
     "highlight.js": "^11.6.0",
+    "lottie-react": "^2.3.1",
     "luxon": "^3.0.3",
     "mdx-bundler": "^9.0.1",
     "next": "12.1.6",
