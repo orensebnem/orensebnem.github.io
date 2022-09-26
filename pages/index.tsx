@@ -1,13 +1,7 @@
 import React from "react";
-import Layout from "../components/Layout";
-import {GetStaticProps} from "next";
 import PortfolioModel from "../interfaces/PortfolioModel";
-import {getAllPortfolio} from "../utils/mdx";
-import {indexPageData} from "../data/indexPageData";
 import IndexPageData from "../interfaces/IndexPageData";
-import SHeader from "../components/header";
-import SVersion from "../components/version";
-import SProjectCards from "../components/project/index.cards";
+import {AboutMePage} from "../components/pages/aboutme";
 
 
 const IndexPage: React.FC<{
@@ -16,24 +10,8 @@ const IndexPage: React.FC<{
 }> = ({indexPageData, portfolios}) => {
 
     return (
-        <Layout title={indexPageData.pageTitle["en-US"]}>
-            <SVersion/>
-            <SHeader/>
-            <SProjectCards
-                indexPageData={indexPageData}
-                portfolios={portfolios}/>
-        </Layout>
+        <AboutMePage />
     );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-    try {
-
-        const portfolios = getAllPortfolio();
-        return {props: {indexPageData, portfolios}};
-    } catch (err) {
-        return {props: {errors: err.message}};
-    }
 };
 
 export default IndexPage;

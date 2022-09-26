@@ -1,16 +1,17 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import React from "react";
+import PortfolioModel from "../interfaces/PortfolioModel";
+import IndexPageData from "../interfaces/IndexPageData";
+import {AboutMePage} from "../components/pages/aboutme";
 
-const AboutPage = () => (
-  <Layout title="About | Next.js + TypeScript Example">
-    <h1>About</h1>
-    <p>This is the about page</p>
-    <p>
-      <Link href="/">
-        <a>Go home</a>
-      </Link>
-    </p>
-  </Layout>
-)
 
-export default AboutPage
+const About: React.FC<{
+    indexPageData: IndexPageData;
+    portfolios: PortfolioModel[];
+}> = ({indexPageData, portfolios}) => {
+
+    return (
+        <AboutMePage />
+    );
+};
+
+export default About;

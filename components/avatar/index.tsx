@@ -14,7 +14,7 @@ export const SAvatar = ({imageName}: SAvatarProps) => {
                 marginTop={6}
                 boxSize={220}
                 height={215}
-                src={`./images/${imageName}`}
+                src={`/images/${imageName}`}
                 alt="Sebnem Oren"
             />
             <Box

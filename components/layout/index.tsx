@@ -14,25 +14,29 @@ export const SLayout = ({children, sMenuSelected}: SLayoutProps) => {
         {
             label: "about me",
             selected: sMenuSelected === "about me",
-            hasTitle: false,
+            href: "about",
+            hasPageTitle: false,
         },
         {
             label: "resume",
             selected: sMenuSelected === "resume",
-            hasTitle: true,
+            href: "resume",
+            hasPageTitle: true,
         }, {
-            label: "portfolio",
-            selected: sMenuSelected === "portfolio",
-            hasTitle: true,
+            label: "portfolios",
+            selected: sMenuSelected === "portfolios",
+            href: "portfolios",
+            hasPageTitle: true,
         }, {
             label: "blog",
             selected: sMenuSelected === "blog",
-            hasTitle: true,
+            href: "blog",
+            hasPageTitle: true,
         }, {
             label: "contact",
             selected: sMenuSelected === "contact",
-            hasTitle: true,
-
+            href: "contact",
+            hasPageTitle: false,
         }];
     const sLogoProps: SLogoProps = {
         name: "Sebnem",
@@ -43,7 +47,7 @@ export const SLayout = ({children, sMenuSelected}: SLayoutProps) => {
     const menuIndex = sMenusProps.findIndex((menu) => {
         return menu.label === sMenuSelected
     })
-    const hasPageTitle = sMenusProps[menuIndex].hasTitle;
+    const hasPageTitle = sMenusProps[menuIndex].hasPageTitle;
 
     return (
         <Flex

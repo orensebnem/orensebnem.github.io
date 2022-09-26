@@ -1,14 +1,16 @@
-import {Link, Text} from "@chakra-ui/react";
+import {Text} from "@chakra-ui/react";
+import Link from "next/link";
 
 export interface SMenuProps {
     label: string;
     selected: boolean;
-    hasTitle: boolean;
+    href: string;
+    hasPageTitle?: boolean,
 }
 
-const SMenu = ({label, selected}: SMenuProps) => {
+const SMenu = ({label, selected, href}: SMenuProps) => {
     return (
-        <Link>
+        <Link href={href}>
             <Text
                 opacity={selected ? 1 : 0.55}>{label}
             </Text>

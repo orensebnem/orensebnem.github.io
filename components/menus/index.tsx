@@ -6,11 +6,13 @@ interface SMenusProps {
     selected: string;
 }
 
-export const SMenus = ({data, selected}: SMenusProps) => {
+export const SMenus = ({data}: SMenusProps) => {
+
     return (
         <Stack direction="row" gap={10}>
-            {data.map((menu) => {
+            {data?.map((menu) => {
                 return <SMenu
+                    href={menu.href}
                     key={menu.label}
                     label={menu.label}
                     selected={menu.selected}/>

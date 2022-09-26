@@ -12,9 +12,11 @@ export default {
 
 const Template:
     ComponentStory<typeof SLayout> = (args) =>
-        <SLayout>
+        <SLayout {...args}>
             <div>Children</div>
         </SLayout>
 
 export const Default = Template.bind({});
-Default.args = {}
+Default.args = {
+    sMenuSelected: "about me",
+}

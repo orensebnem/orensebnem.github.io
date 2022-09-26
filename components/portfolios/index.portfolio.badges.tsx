@@ -4,10 +4,10 @@ export interface SPortfolioBadgeProps {
     data: string[];
 }
 
-export const SPortfolioBadges = ({data}: SPortfolioBadgeProps) => {
+export const SPortfolioTags = ({tags}: {tags:string[]}) => {
     return (
         <>
-            {data.map((item) => {
+            {tags.map((item) => {
                 return <Badge
                     px={2}
                     py={1}

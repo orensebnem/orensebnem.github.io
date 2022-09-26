@@ -1,29 +1,40 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Image from 'next/image';
 import {Box, Heading, Stack, Text, useColorModeValue,} from '@chakra-ui/react';
-import {SPortfolioBadgeProps, SPortfolioBadges} from "./index.portfolio.badges";
-import { useLottie } from "lottie-react";
+import {SPortfolioBadgeProps, SPortfolioTags} from "./index.portfolio.badges";
+import {useLottie} from "lottie-react";
 
 export interface SPortfolioProps {
     title?: string;
     description: string;
     headerAnimation: string;
-    badgesProps: SPortfolioBadgeProps;
+    tags: string[];
 }
 
 export const SPortfolio = ({
                                title,
                                description,
                                headerAnimation,
-                               badgesProps
+                               tags
                            }: SPortfolioProps) => {
 
-    const {data: badgesData} = badgesProps
 
     const [onHover, setOnHover] = useState(false);
+    const [animation, setAnimation] = useState("");
+
+    const getMarkdown = async (page) => {
+        return await require(`../../public/images/portfolios/${page}/header.json`)
+    }
+
+    useEffect(() => {
+        getMarkdown(headerAnimation)
+            .then((result) => {
+                setAnimation(result);
+            })
+    }, [])
 
     const options = {
-        animationData: headerAnimation,
+        animationData: animation,
         loop: onHover,
         style: {
             height: "100%"
@@ -64,7 +75,7 @@ export const SPortfolio = ({
                     {description}
                 </Text>
             </Stack>
-            <SPortfolioBadges data={badgesData}/>
+            <SPortfolioTags tags={tags}/>
         </Box>
     )
 }

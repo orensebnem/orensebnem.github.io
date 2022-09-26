@@ -1,3 +1,4 @@
+
 export interface Frontmatter {
   slug: string;
   title: string;
@@ -8,6 +9,7 @@ export interface Frontmatter {
   image?: string;
   colorPalette: string;
   tags: string[];
+  headerAnimation: string;
 }
 
 export default interface PortfolioModel {
