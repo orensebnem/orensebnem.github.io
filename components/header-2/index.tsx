@@ -22,7 +22,8 @@ export const SHeader2 = ({
     } = sMenusProps;
 
     return (
-        <Flex align="center"
+        <Flex data-testid="header-2"
+              align="center"
               justifyContent="space-between"
               justifyItems="space-between"
               margin={10}>

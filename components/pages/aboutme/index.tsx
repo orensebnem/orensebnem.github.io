@@ -1,6 +1,4 @@
 import {SPersonnel} from "../../personnel";
-import {SMenuProps} from "../../menus/index.menu";
-import {SLogoProps} from "../../logo";
 import {SInformationProps} from "../../information";
 import {SAvatarProps} from "../../avatar";
 import {SLayout} from "../../layout/index";
@@ -17,8 +15,8 @@ export const AboutMePage = () => {
 
     return (
         <SLayout sMenuSelected="about me">
-            <SPersonnel avatarProps={sAvatarProps}
-                        informationProps={sInformationProps}/>
+                <SPersonnel avatarProps={sAvatarProps}
+                            informationProps={sInformationProps}/>
         </SLayout>
     )
 }

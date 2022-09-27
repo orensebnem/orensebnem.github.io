@@ -16,6 +16,7 @@ hljs.registerLanguage('gherkin', gherkin);
 
 function MyApp({Component, pageProps}: AppProps) {
     const {colorMode, toggleColorMode} = useColorMode();
+
     return (
         <ChakraProvider theme={theme}>
             {/*@ts-ignore*/}

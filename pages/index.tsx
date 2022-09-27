@@ -10,7 +10,7 @@ const IndexPage: React.FC<{
 }> = ({indexPageData, portfolios}) => {
 
     return (
-        <AboutMePage />
+        <AboutMePage/>
     );
 };
 

@@ -7,12 +7,13 @@ import SHeaderSubtitle from "./index.subtitle";
 const SHeader = () => {
 
     return (
-        <Box bg="primary"
-             backgroundColor={"primary.50"}
-             borderTop={0.5}
-             borderBottom={0.5}
-             borderColor="accent"
-             borderStyle="solid"
+        <Box
+            bg="primary"
+            backgroundColor={"primary.50"}
+            borderTop={0.5}
+            borderBottom={0.5}
+            borderColor="accent"
+            borderStyle="solid"
         >
             <Flex align={"center"}>
                 <Flex direction={"column"} flex={1} alignItems={"center"}>

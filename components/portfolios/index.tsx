@@ -13,7 +13,8 @@ export const SPortfolios = ({data}: SPortfoliosProps) => {
             wrap="wrap"
             justifyContent="center"
             gap='10'
-            mt={20}>
+            mt={20}
+            data-testid="portfolios">
             {data?.map((item) => {
                 const {
                     headerAnimation,

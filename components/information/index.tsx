@@ -12,7 +12,10 @@ export const SInformation = ({
                                  description
                              }: SInformationProps) => {
     return (
-        <Stack direction="column" width={400}>
+        <Stack direction="column"
+               width={400}
+               marginLeft={10}
+               marginRight={10}>
             <Text
                 fontSize="lg"
                 fontWeight="bold">{title}</Text>

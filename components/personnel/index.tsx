@@ -21,9 +21,11 @@ export const SPersonnel = ({
 
     return (
         <Flex
+            flexWrap="wrap"
             justifyContent="center"
             alignItems="center"
             gap={20}
+            width="100%"
             marginTop={50}>
             <SAvatar imageName={imageName}/>
             <SInformation

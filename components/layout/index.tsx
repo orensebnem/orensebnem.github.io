@@ -52,13 +52,16 @@ export const SLayout = ({children, sMenuSelected}: SLayoutProps) => {
     return (
         <Flex
             direction="column"
-            backgroundColor="#629ED9">
+            data-testid="layout"
+            backgroundColor="#FFF"
+            mt={10}
+            borderRadius={50}>
             <Box
-                backgroundColor="white"
-                width="90%"
                 alignSelf="center"
                 marginTop={10}
                 pb={20}
+                height="100%"
+                width="100%"
                 roundedTop={20}>
                 <SHeader2 sLogoProps={sLogoProps}
                           sMenusProps={{
@@ -84,12 +87,11 @@ export const SLayout = ({children, sMenuSelected}: SLayoutProps) => {
                     justifyContent="center"
                     alignItems="center"
                     gap={20}
-                    marginTop={50}>
+                    marginTop={50}
+                    height="100%">
 
                     {children}
                 </Flex>
-
-
             </Box>
         </Flex>
     )

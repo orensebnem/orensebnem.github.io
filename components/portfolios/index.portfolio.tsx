@@ -55,6 +55,7 @@ export const SPortfolio = ({
 
     return (
         <Box
+            data-testid="portfolio"
             maxW={[150, 200, 300, 350]}
             w={'full'}
             bg={useColorModeValue('gray.100', 'gray.900')}
