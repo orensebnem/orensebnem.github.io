@@ -2,6 +2,7 @@ import {SLogo, SLogoProps} from "../logo";
 import {Flex} from "@chakra-ui/react";
 import {SMenus} from "../menus";
 import {SMenuProps} from "../menus/index.menu";
+import {useState} from "react";
 
 interface SHeader2Props {
     sLogoProps: SLogoProps;
@@ -21,9 +22,12 @@ export const SHeader2 = ({
         selected: sMenusSelected
     } = sMenusProps;
 
+    const [display, setDisplay] = useState('flex');
+
     return (
         <Flex data-testid="header-2"
               align="center"
+              display={display}
               justifyContent="space-between"
               justifyItems="space-between"
               margin={10}>

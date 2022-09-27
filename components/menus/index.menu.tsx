@@ -6,13 +6,14 @@ export interface SMenuProps {
     selected: boolean;
     href: string;
     hasPageTitle?: boolean,
+    size?: number,
 }
 
-const SMenu = ({label, selected, href}: SMenuProps) => {
+const SMenu = ({label, selected, href, size=16}: SMenuProps) => {
     return (
         <Link href={href}>
-            <Text
-                opacity={selected ? 1 : 0.55}>{label}
+            <Text opacity={selected ? 1 : 0.55}
+            fontSize={size}>{label}
             </Text>
         </Link>
     )
