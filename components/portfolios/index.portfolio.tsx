@@ -61,7 +61,8 @@ export const SPortfolio = ({
             _hover={{
                 cursor: "pointer"
             }}
-            boxShadow='l'
+            boxShadow={onHover ? "2xl" : "xs"}
+            transition={"box-shadow 0.3s  ease-in-out"}
             rounded={'md'}
             p={6}
             overflow={'hidden'}
@@ -69,7 +70,8 @@ export const SPortfolio = ({
             onMouseLeave={handleMouseOnLeave}>
 
             <Box
-                h={[75, 100, 150, 175]}
+                h={[75, 100, 150, onHover ? 180 : 175]}
+                transition={"height 0.3s"}
                 bg={'gray.100'}
                 mx={-6}
                 mb={6}
