@@ -71,11 +71,12 @@ export const SLayout = ({children, sMenuSelected}: SLayoutProps) => {
 
                 {hasPageTitle &&
                 <Center
-                    height={180}
+                    height={[100,100,140,180]}
                     backgroundColor="#FDFDFD"
                     borderTop="2px solid #f2f2f2"
                     borderBottom="2px solid #f2f2f2">
                     <Heading as="h1"
+                             fontSize={["xl","2xl","3xl","4xl"]}
                              ml={50}
                              width="100%">
                         {sMenuSelected.toUpperCase()}

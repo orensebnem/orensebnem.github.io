@@ -1,5 +1,6 @@
 import {Text} from "@chakra-ui/react";
 import Link from "next/link";
+import {useState} from "react";
 
 export interface SMenuProps {
     label: string;
@@ -9,13 +10,23 @@ export interface SMenuProps {
     size?: number,
 }
 
-const SMenu = ({label, selected, href, size=16}: SMenuProps) => {
+const SMenu = ({label, selected, href, size = 16}: SMenuProps) => {
+
+    const [hover, setHover] = useState(false);
+
     return (
-        <Link href={href}>
-            <Text opacity={selected ? 1 : 0.55}
-            fontSize={size}>{label}
-            </Text>
-        </Link>
+        <div onMouseEnter={()=> setHover(true)}
+             onMouseLeave={()=> setHover(false)}
+             style={{
+                 textDecoration: hover ? "underline" : "none",
+                 cursor: hover ? "pointer" : "default"
+             }}>
+            <Link href={href}>
+                <Text opacity={selected ? 1 : 0.55}
+                      fontSize={size}>{label}
+                </Text>
+            </Link>
+        </div>
     )
 }
 

@@ -17,11 +17,11 @@ export const SInformation = ({
                marginLeft={10}
                marginRight={10}>
             <Text
-                fontSize="lg"
+                fontSize={["2xl","2xl","2lg","2xl"]}
                 fontWeight="bold">{title}</Text>
             <Text fontSize="4xl"
                   fontWeight="bold">{subtitle}</Text>
-            <Text>{description}</Text>
+            <Text fontSize={["2xl","2xl","xl","xl"]}>{description}</Text>
         </Stack>
     )
 }

@@ -22,15 +22,14 @@ export const SHeader2 = ({
         selected: sMenusSelected
     } = sMenusProps;
 
-    const [display, setDisplay] = useState('flex');
-
     return (
         <Flex data-testid="header-2"
               align="center"
-              display={display}
               justifyContent="space-between"
               justifyItems="space-between"
-              margin={10}>
+              ml={10}
+              mr={10}
+              mb={10}>
             <SLogo name={sLogoProps.name}
                    surname={sLogoProps.surname}/>
             <SMenus

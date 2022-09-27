@@ -13,12 +13,13 @@ export const SLogo = ({name, surname}: SLogoProps) => {
             align="center">
             <Avatar
                 name={name}
-                fontSize={40}
+                size={["lg","lg","lg","lg"]}
                 fontWeight="bold"
                 color="white"
                 bgColor="#6DA6E0"
                 src="/"/>
             <Text
+                fontSize={["lg","lg","lg","lg"]}
                 fontWeight="bold">
                 {name} {surname}
             </Text>

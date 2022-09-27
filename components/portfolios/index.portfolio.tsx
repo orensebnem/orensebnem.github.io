@@ -56,8 +56,7 @@ export const SPortfolio = ({
     return (
         <Box
             data-testid="portfolio"
-            maxW={[150, 200, 300, 350]}
-            w={'full'}
+            maxW={["sm", "sm", "sm", "sm"]}
             bg={useColorModeValue('gray.100', 'gray.900')}
             _hover={{
                 cursor: "pointer"
@@ -80,11 +79,12 @@ export const SPortfolio = ({
             <Stack>
                 <Heading
                     color={useColorModeValue('gray.700', 'white')}
-                    fontSize={'2xl'}
+                    fontSize={["lg","lg","xl","2xl"]}
                     fontFamily={'body'}>
                     {title}
                 </Heading>
-                <Text color={'gray.500'} fontSize={12}>
+                <Text color={'gray.500'}
+                      fontSize={["lg","lg","xl","2xl"]}>
                     {description}
                 </Text>
             </Stack>
