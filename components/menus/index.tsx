@@ -50,9 +50,9 @@ export const SMenus = ({data}: SMenusProps) => {
                 size="lg"
                 mr={2}
                 icon={
-                    <HamburgerIcon onClick={()=> onOpen()}/>
+                    <HamburgerIcon />
                 }
-
+                onClick={()=> onOpen()}
                 display={['flex', 'flex', 'none', 'none']}
             />
             <Stack direction="row" gap={10} display={["none", "none", "flex", "flex"]}>
