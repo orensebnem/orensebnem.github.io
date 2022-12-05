@@ -36,6 +36,7 @@ const getCompiledMDX = async (source: string) => {
     const rehypePlugins = [rehypeHighlight];
 
     return await bundleMDX({
+        // @ts-ignore
         source, xdmOptions: (options) => {
             // @ts-ignore
             options.remarkPlugins = [
