@@ -23,6 +23,7 @@
     "@fontsource/open-sans": "^4.5.11",
     "@fontsource/poppins": "^4.5.8",
     "@fontsource/roboto": "^4.5.8",
+    "@semantic-release/changelog": "^6.0.2",
     "@types/react": "^18.0.20",
     "@types/recharts": "^1.8.24",
     "autoprefixer": "^10.4.11",
