@@ -1,3 +1,35 @@
+# [1.1.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.0.2...v1.1.0) (2022-12-05)
+
+
+### Bug Fixes
+
+* **_document:** layout ([7d9c2c0](https://github.com/orensebnem/orensebnem.github.io/commit/7d9c2c0a0ffca3627c5fdd26bee4aedb2a968b00))
+* **menus:** click ([05f7caa](https://github.com/orensebnem/orensebnem.github.io/commit/05f7caac6bc4cc2469ff1f4db198a58e35ada12d))
+* **pages:** layer ([60d113f](https://github.com/orensebnem/orensebnem.github.io/commit/60d113f60a27fc9a3ab6a13e1fbb605bcfb78794))
+* **pages:** layout ([6592fa1](https://github.com/orensebnem/orensebnem.github.io/commit/6592fa1645143fc0d7f09ff175ec86e5bdee6baf))
+* **portfolio:** header image method ([0a81fc7](https://github.com/orensebnem/orensebnem.github.io/commit/0a81fc7dacf0359c918d7b5172e64f4964bf5cb1))
+* **portfolio:** when mouse over change cursor to pointer ([fa59da1](https://github.com/orensebnem/orensebnem.github.io/commit/fa59da1c8fa76c6fcc81b3e15540fed0ebacfb18))
+* **semantic-release/changelog:** add ([dc07f01](https://github.com/orensebnem/orensebnem.github.io/commit/dc07f0166f7b40e7b2aa349341439bb5f33f7455))
+* **semantic-release:** add packages ([b0c3390](https://github.com/orensebnem/orensebnem.github.io/commit/b0c3390df9fd62f0db2c467092a6b532a8ed7ba0))
+* **storybook:** all ([b64e312](https://github.com/orensebnem/orensebnem.github.io/commit/b64e312b1e72ee97983031c1b1f163c32755e6fa))
+* **typescript:** checks ([02f09a6](https://github.com/orensebnem/orensebnem.github.io/commit/02f09a6edc625a3ac8b49a5ac1bdbfe3184ff2de))
+
+
+### Features
+
+* **avatar:** add ([b5ae47e](https://github.com/orensebnem/orensebnem.github.io/commit/b5ae47e1f45a7092841d87ede276c24f975044c9))
+* **chakra-ui:** config for storybook ([e2761e8](https://github.com/orensebnem/orensebnem.github.io/commit/e2761e80e60c72a6f5481c8ff2d03c0dc736bb99))
+* **header:** implement ([28ebb62](https://github.com/orensebnem/orensebnem.github.io/commit/28ebb62c6a87037d3ea541b8538fc1f1cd9852d3))
+* **home page:** implement ([5ff8ea7](https://github.com/orensebnem/orensebnem.github.io/commit/5ff8ea73bf83b7fdd494a44b2b4f1d0f14e92d00))
+* **lottie:** add header ([ac127dd](https://github.com/orensebnem/orensebnem.github.io/commit/ac127dd5663a859cc8dd57c143fe08ad9f350830))
+* **menu:** hamburger ([887fd40](https://github.com/orensebnem/orensebnem.github.io/commit/887fd40b75e07bec36fd66c6c9489ef88d7b7be1))
+* **portfolio:** implement ([ec84cee](https://github.com/orensebnem/orensebnem.github.io/commit/ec84ceea250a79c42bc7da16e4b8fc68b0e8f406))
+* **portfolios:** transition on mouse over ([7c34109](https://github.com/orensebnem/orensebnem.github.io/commit/7c34109a09726918ee67c7117f80da567fa74685))
+* **showcase:** changes ([f9c393a](https://github.com/orensebnem/orensebnem.github.io/commit/f9c393a3f02bd2d4ef78da85b324930cff4ba996))
+* **storybook:** add ([06a3e95](https://github.com/orensebnem/orensebnem.github.io/commit/06a3e9552368091558916ffaa4c637eb6a377590))
+* **storybook:** add ([ef28e48](https://github.com/orensebnem/orensebnem.github.io/commit/ef28e4806f1d7937162ee2bdb0b3df0e1a7fd8fd))
+* **storybook:** upgrade ([81d7caf](https://github.com/orensebnem/orensebnem.github.io/commit/81d7caf44d536720eb2b2b9b65b32f1026a014bc))
+
 ## [1.0.2](https://github.com/orensebnem/orensebnem.github.io/compare/v1.0.1...v1.0.2) (2022-06-29)
 
 
