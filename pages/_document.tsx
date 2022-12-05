@@ -1,5 +1,5 @@
 import Document, {Head, Html, Main, NextScript,} from "next/document";
-import {Box, ColorModeScript} from "@chakra-ui/react";
+import {ColorModeScript} from "@chakra-ui/react";
 import theme from "../data/themes/theme";
 
 
@@ -11,15 +11,15 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html style={{height: "100%"}}>
+            <Html>
                 <Head/>
+
                 <body style={{
                     backgroundColor: "#629ED9",
-                    height: "100%",
                     marginTop: 10,
-                    marginLeft: "5vw",
-                    marginRight: "5vw",
                     marginBottom: 10,
+                    width: "88%",
+                    margin: "auto"
                 }}>
                 <div
                     style={{

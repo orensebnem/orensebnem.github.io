@@ -4,7 +4,6 @@ import PortfolioModel from "../interfaces/PortfolioModel";
 import {getAllPortfolio} from "../utils/mdx";
 import {indexPageData} from "../data/indexPageData";
 import IndexPageData from "../interfaces/IndexPageData";
-import {SPortfolios} from "../components/portfolios";
 import {PortfoliosPage} from "../components/pages/portfolios";
 
 

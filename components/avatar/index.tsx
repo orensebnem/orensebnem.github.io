@@ -12,8 +12,8 @@ export const SAvatar = ({imageName}: SAvatarProps) => {
                 borderRadius='full'
                 marginLeft={4}
                 marginTop={6}
-                boxSize={220}
-                height={215}
+                boxSize={300}
+                height={300}
                 src={`/images/${imageName}`}
                 alt="Sebnem Oren"
             />
@@ -21,7 +21,7 @@ export const SAvatar = ({imageName}: SAvatarProps) => {
                 borderRadius='full'
                 margin={2}
                 boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
-                boxSize={250}
+                boxSize={330}
             />
         </Stack>
     )

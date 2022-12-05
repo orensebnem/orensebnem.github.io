@@ -1,21 +1,23 @@
 import React, {useEffect, useState} from "react";
-import Image from 'next/image';
 import {Box, Heading, Stack, Text, useColorModeValue,} from '@chakra-ui/react';
-import {SPortfolioBadgeProps, SPortfolioTags} from "./index.portfolio.badges";
+import {SPortfolioTags} from "./index.portfolio.badges";
 import {useLottie} from "lottie-react";
+import Link from "next/link";
 
 export interface SPortfolioProps {
     title?: string;
     description: string;
     headerAnimation: string;
     tags: string[];
+    href: string;
 }
 
 export const SPortfolio = ({
                                title,
                                description,
                                headerAnimation,
-                               tags
+                               tags,
+                               href
                            }: SPortfolioProps) => {
 
 
@@ -54,43 +56,45 @@ export const SPortfolio = ({
     !onHover && pause();
 
     return (
-        <Box
-            data-testid="portfolio"
-            maxW={["sm", "sm", "sm", "sm"]}
-            bg={useColorModeValue('gray.100', 'gray.900')}
-            _hover={{
-                cursor: "pointer"
-            }}
-            boxShadow={onHover ? "2xl" : "xs"}
-            transition={"box-shadow 0.3s  ease-in-out"}
-            rounded={'md'}
-            p={6}
-            overflow={'hidden'}
-            onMouseEnter={handleMouseOnEnter}
-            onMouseLeave={handleMouseOnLeave}>
-
+        <Link href={`portfolios/${href}`}>
             <Box
-                h={[75, 100, 150, onHover ? 180 : 175]}
-                transition={"height 0.3s"}
-                bg={'gray.100'}
-                mx={-6}
-                mb={6}
-                pos={'relative'}>
-                {View}
+                data-testid="portfolio"
+                maxW={["sm", "sm", "sm", "xs"]}
+                bg={useColorModeValue('gray.100', 'gray.900')}
+                _hover={{
+                    cursor: "pointer"
+                }}
+                boxShadow={onHover ? "2xl" : "xs"}
+                transition={"box-shadow 0.3s  ease-in-out"}
+                rounded={'2xl'}
+                p={6}
+                overflow={'hidden'}
+                onMouseEnter={handleMouseOnEnter}
+                onMouseLeave={handleMouseOnLeave}>
+
+                <Box
+                    h={[75, 100, 150, onHover ? 180 : 175]}
+                    transition={"height 0.3s"}
+                    bg={'gray.100'}
+                    mx={-6}
+                    mb={6}
+                    pos={'relative'}>
+                    {View}
+                </Box>
+                <Stack>
+                    <Heading
+                        color={useColorModeValue('gray.700', 'white')}
+                        fontSize={["lg", "lg", "xl", "2xl"]}
+                        fontFamily={'body'}>
+                        {title}
+                    </Heading>
+                    <Text color={'gray.500'}
+                          fontSize={["lg", "lg", "xl", "2xl"]}>
+                        {description}
+                    </Text>
+                </Stack>
+                <SPortfolioTags tags={tags}/>
             </Box>
-            <Stack>
-                <Heading
-                    color={useColorModeValue('gray.700', 'white')}
-                    fontSize={["lg","lg","xl","2xl"]}
-                    fontFamily={'body'}>
-                    {title}
-                </Heading>
-                <Text color={'gray.500'}
-                      fontSize={["lg","lg","xl","2xl"]}>
-                    {description}
-                </Text>
-            </Stack>
-            <SPortfolioTags tags={tags}/>
-        </Box>
+        </Link>
     )
 }

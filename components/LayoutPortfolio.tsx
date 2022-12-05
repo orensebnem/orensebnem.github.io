@@ -14,7 +14,10 @@ const LayoutPortfolio: FC<LayoutJournalProps> = ({children, title}) => {
     const router = useRouter();
 
     return (
-        <Container maxWidth={1000} height={"100vh"}>
+        <Container maxWidth={1000}
+                   mt={10}
+                   backgroundColor="#FFF"
+                   width="100%">
             <Head>
                 <title>{title}</title>
                 <meta charSet="utf-8"/>

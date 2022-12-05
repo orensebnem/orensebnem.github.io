@@ -7,9 +7,10 @@ import {ReactElement} from "react";
 interface SLayoutProps {
     sMenuSelected: string;
     children: ReactElement;
+    backgroundColor: string;
 }
 
-export const SLayout = ({children, sMenuSelected}: SLayoutProps) => {
+export const SLayout = ({children, sMenuSelected, backgroundColor}: SLayoutProps) => {
     const sMenusProps: SMenuProps[] = [
         {
             label: "about me",
@@ -17,17 +18,17 @@ export const SLayout = ({children, sMenuSelected}: SLayoutProps) => {
             href: "about",
             hasPageTitle: false,
         },
-        {
+        /*{
             label: "resume",
             selected: sMenuSelected === "resume",
             href: "resume",
             hasPageTitle: true,
-        }, {
+        }*/ {
             label: "portfolios",
             selected: sMenuSelected === "portfolios",
             href: "portfolios",
             hasPageTitle: true,
-        }, {
+        }, /*{
             label: "blog",
             selected: sMenuSelected === "blog",
             href: "blog",
@@ -37,7 +38,7 @@ export const SLayout = ({children, sMenuSelected}: SLayoutProps) => {
             selected: sMenuSelected === "contact",
             href: "contact",
             hasPageTitle: false,
-        }];
+        }*/];
     const sLogoProps: SLogoProps = {
         name: "Sebnem",
         surname: "Oren"
@@ -53,11 +54,10 @@ export const SLayout = ({children, sMenuSelected}: SLayoutProps) => {
         <Flex
             direction="column"
             data-testid="layout"
-            backgroundColor="#FFF"
+            backgroundColor={backgroundColor}
             mt={10}
             borderRadius={50}>
-            <Box
-                alignSelf="center"
+            <Box alignSelf="center"
                 marginTop={10}
                 pb={20}
                 height="100%"

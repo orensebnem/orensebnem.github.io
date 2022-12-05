@@ -24,6 +24,7 @@
     "@fontsource/poppins": "^4.5.8",
     "@fontsource/roboto": "^4.5.8",
     "@types/react": "^18.0.20",
+    "@types/recharts": "^1.8.24",
     "autoprefixer": "^10.4.11",
     "esbuild": "^0.15.7",
     "framer-motion": "^6",
@@ -39,6 +40,9 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-icons": "^4.4.0",
+    "react-parallax-tilt": "^1.7.73",
+    "react-spring": "^9.5.5",
+    "recharts": "^2.1.16",
     "rehype-highlight": "^5.0.2",
     "remark-gfm": "^3.0.1",
     "remark-toc": "^8.0.1"

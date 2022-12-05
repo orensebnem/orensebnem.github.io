@@ -25,8 +25,7 @@ export const SPersonnel = ({
             justifyContent="center"
             alignItems="center"
             gap={20}
-            width="100%"
-            marginTop={50}>
+            width="100%">
             <SAvatar imageName={imageName}/>
             <SInformation
                 title={title}

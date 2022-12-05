@@ -13,7 +13,7 @@ export const SPortfolios = ({data}: SPortfoliosProps) => {
             wrap="wrap"
             justifyContent="center"
             gap='10'
-            mt={[0,0,0,3]}
+            mt={[0, 0, 0, 3]}
             data-testid="portfolios">
             {data?.map((item) => {
                 const {
@@ -23,12 +23,15 @@ export const SPortfolios = ({data}: SPortfoliosProps) => {
                     tags,
                 } = item.frontmatter;
 
+                const href = item.slug;
 
-                return <SPortfolio
+                return <>
+                    <SPortfolio
                     headerAnimation={headerAnimation}
                     title={title}
                     description={description}
-                    tags={tags}/>
+                    tags={tags}
+                    href={href}/></>
             })}
         </Flex>)
 }

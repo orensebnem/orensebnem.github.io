@@ -10,13 +10,20 @@ export const AboutMePage = () => {
     const sInformationProps: SInformationProps = {
         title: "Product manager",
         subtitle: "Sebnem Oren",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type "
+        description: `
+        Product enthusiast with a passion for solving problems and delivering 
+        compelling customer experiences based on data to generate value for users 
+        and organizations. Ability to interact with internal and external business clients, 
+        technical teams and end-users in conveying solutions effectively. 
+        Project management skills with balancing competing priorities 
+        for complex projects and the ability to thrive in interdisciplinary teams.
+        `
     }
 
     return (
-        <SLayout sMenuSelected="about me">
-                <SPersonnel avatarProps={sAvatarProps}
-                            informationProps={sInformationProps}/>
+        <SLayout sMenuSelected="about me" backgroundColor="#FFF">
+            <SPersonnel avatarProps={sAvatarProps}
+                        informationProps={sInformationProps}/>
         </SLayout>
     )
 }
