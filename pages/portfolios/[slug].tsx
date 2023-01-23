@@ -4,6 +4,7 @@ import {getAllPortfolio, getSinglePortfolio} from "../../utils/mdx";
 import {Frontmatter} from "../../interfaces/PortfolioModel";
 import * as Components from "../../components";
 import LayoutPortfolio from "../../components/LayoutPortfolio";
+import {ArrowBackIcon} from "@chakra-ui/icons";
 
 
 interface PortfolioProps {

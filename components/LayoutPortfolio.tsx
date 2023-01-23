@@ -27,9 +27,13 @@ const LayoutPortfolio: FC<LayoutJournalProps> = ({children, title}) => {
                 <nav>
                 </nav>
             </header>
-            <Flex direction="row">
+
+            <Flex direction="row"
+                  pt={20}>
+
                 <ArrowBackIcon boxSize={['5', '10', '20']}
                                color="secondary"
+
                                alignSelf="center"
                                _hover={{
                                    cursor: "pointer",
@@ -41,7 +45,7 @@ const LayoutPortfolio: FC<LayoutJournalProps> = ({children, title}) => {
                 <Text textStyle="h1" textTransform="uppercase">{title}</Text>
 
             </Flex>
-            <Center mt={50}>
+            <Center mt={50} ml={20}>
                 {children}
             </Center>
             <br/>
