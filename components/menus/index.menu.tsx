@@ -20,7 +20,7 @@ const SMenu = ({label, selected, href, size = 16}: SMenuProps) => {
                  textDecoration: hover ? "underline" : "none",
                  cursor: hover ? "pointer" : "default"
              }}>
-            <Link href={"#PORTFOLIOS"}>
+            <Link href={`#${href}`}>
                 <Text opacity={selected ? 1 : 0.55}
                       fontSize={size}>{label}
                 </Text>

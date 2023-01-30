@@ -15,7 +15,7 @@ export const SLayout = ({children, sMenuSelected, backgroundColor}: SLayoutProps
         {
             label: "about me",
             selected: sMenuSelected === "about me",
-            href: "about",
+            href: "Product manager",
             hasPageTitle: false,
         },
         /*{
@@ -26,7 +26,7 @@ export const SLayout = ({children, sMenuSelected, backgroundColor}: SLayoutProps
         }*/ {
             label: "portfolios",
             selected: sMenuSelected === "portfolios",
-            href: "portfolios",
+            href: "PORTFOLIOS",
             hasPageTitle: true,
         }, /*{
             label: "blog",
