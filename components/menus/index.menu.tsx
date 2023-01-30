@@ -1,5 +1,4 @@
-import {Text} from "@chakra-ui/react";
-import Link from "next/link";
+import {Link, Text} from "@chakra-ui/react";
 import {useState} from "react";
 
 export interface SMenuProps {
@@ -21,7 +20,7 @@ const SMenu = ({label, selected, href, size = 16}: SMenuProps) => {
                  textDecoration: hover ? "underline" : "none",
                  cursor: hover ? "pointer" : "default"
              }}>
-            <Link href={href}>
+            <Link href={"#PORTFOLIOS"}>
                 <Text opacity={selected ? 1 : 0.55}
                       fontSize={size}>{label}
                 </Text>

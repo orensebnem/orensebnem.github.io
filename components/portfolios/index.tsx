@@ -14,6 +14,8 @@ export const SPortfolios = ({data}: SPortfoliosProps) => {
             justifyContent="center"
             gap='10'
             mt={[0, 0, 0, 3]}
+            mb={100}
+            pb={100}
             data-testid="portfolios">
             {data?.map((item) => {
                 const {
