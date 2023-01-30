@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.1.0...v1.1.1) (2023-01-30)
+
+
+### Bug Fixes
+
+* **deployment:** change node version to 16.10 ([82332b8](https://github.com/orensebnem/orensebnem.github.io/commit/82332b8d67a10d9dbf34ec4ad6b30bd656ee83f1))
+* **deployment:** change node version to 18.x ([fe12523](https://github.com/orensebnem/orensebnem.github.io/commit/fe1252372eb87b03e4c8ab0e294ad2f015a82575))
+* **portfolio detail:** ui [#3](https://github.com/orensebnem/orensebnem.github.io/issues/3) ([963a69f](https://github.com/orensebnem/orensebnem.github.io/commit/963a69f769cdd48efbbd9c9e086b4083a3cc1aab))
+
 # [1.1.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.0.2...v1.1.0) (2022-12-05)
 
 
