@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.1.1...v1.2.0) (2023-09-12)
+
+
+### Features
+
+* **udrink:** project add ([29eaea5](https://github.com/orensebnem/orensebnem.github.io/commit/29eaea5b743df95271a8dbf845436b33659b0b54))
+
 ## [1.1.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.1.0...v1.1.1) (2023-01-30)
 
 
