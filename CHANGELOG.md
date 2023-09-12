@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.2.1...v1.3.0) (2023-09-12)
+
+
+### Features
+
+* **google ads:** add ([867c778](https://github.com/orensebnem/orensebnem.github.io/commit/867c778df2acdef195582e484a130de105e809fc))
+
 ## [1.2.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.2.0...v1.2.1) (2023-09-12)
 
 
