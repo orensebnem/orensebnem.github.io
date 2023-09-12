@@ -11,6 +11,7 @@ import '@fontsource/caveat/400.css';
 import '@fontsource/handlee/400.css';
 import '@fontsource/open-sans/500.css'
 import '@fontsource/open-sans/500-italic.css'
+import Script from "next/script";
 
 hljs.registerLanguage('gherkin', gherkin);
 
@@ -18,10 +19,27 @@ function MyApp({Component, pageProps}: AppProps) {
     const {colorMode, toggleColorMode} = useColorMode();
 
     return (
-        <ChakraProvider theme={theme}>
-            {/*@ts-ignore*/}
-            <Component {...pageProps} />
-        </ChakraProvider>
+        <>
+            <Script
+                strategy="lazyOnload"
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+            />
+
+            <Script strategy="lazyOnload">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+            </Script>
+            <ChakraProvider theme={theme}>
+                {/*@ts-ignore*/}
+                <Component {...pageProps} />
+            </ChakraProvider>
+        </>
     );
 }
 
