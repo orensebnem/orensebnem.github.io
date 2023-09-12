@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.2.0...v1.2.1) (2023-09-12)
+
+
+### Bug Fixes
+
+* **final design images:** change name ([6013332](https://github.com/orensebnem/orensebnem.github.io/commit/6013332e37148663eafe6776dd6dbc0975682153))
+
 # [1.2.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.1.1...v1.2.0) (2023-09-12)
 
 
