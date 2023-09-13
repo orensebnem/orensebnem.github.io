@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.3.0...v1.3.1) (2023-09-13)
+
+
+### Bug Fixes
+
+* **google analytics:** environment ([29aa01d](https://github.com/orensebnem/orensebnem.github.io/commit/29aa01d188ca8198f13556fccb7bbb6d5f02cd46))
+
 # [1.3.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.2.1...v1.3.0) (2023-09-12)
 
 
