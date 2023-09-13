@@ -40,6 +40,8 @@ jobs:
           npm ci --legacy-peer-deps
           npm run build
           npm run export
+        env:
+          NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ secrets.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
 
       - name: Release
         env:
