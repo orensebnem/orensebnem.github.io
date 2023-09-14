@@ -10,6 +10,7 @@ on:
 jobs:
   deployment:
     runs-on: ubuntu-latest
+    environment: github-pages
 
     strategy:
       matrix:
@@ -39,7 +40,7 @@ jobs:
         env:
           NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ vars.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
         run: |
-          echo "$NEXT_PUBLIC_GOOGLE_ANALYTICS"
+          echo "NEXT_PUBLIC_GOOGLE_ANALYTICS is $NEXT_PUBLIC_GOOGLE_ANALYTICS"
 
       - name: Build
         run: |
