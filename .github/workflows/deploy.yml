@@ -36,13 +36,12 @@ jobs:
             ${{ runner.OS }}-
 
       - name: Build
+        env:
+          NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ vars.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
         run: |
           npm ci --legacy-peer-deps
           npm run build
           npm run export
-        env:
-          NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ vars.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
-
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
