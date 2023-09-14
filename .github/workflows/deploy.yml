@@ -37,7 +37,7 @@ jobs:
 
       - name: Build
         run: |
-          echo "google analytics id is $NEXT_PUBLIC_GOOGLE_ANALYTICS"
+          echo "google analytics id is ${{ vars.NEXT_PUBLIC_GOOGLE_ANALYTICS }}"
           npm ci --legacy-peer-deps
           npm run build
           npm run export
