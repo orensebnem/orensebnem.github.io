@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/orensebnem/orensebnem.github.io/compare/v1.3.1...v1.3.2) (2023-09-14)
+
+
+### Bug Fixes
+
+* **github:** actions vars ([2331ac5](https://github.com/orensebnem/orensebnem.github.io/commit/2331ac52f5bc2b9bd03e0d801b601e4c41716007))
+
 ## [1.3.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.3.0...v1.3.1) (2023-09-13)
 
 
