@@ -36,13 +36,10 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
 
-      - name: Environments
-        env:
-          NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ vars.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
-        run: |
-          echo "NEXT_PUBLIC_GOOGLE_ANALYTICS is $NEXT_PUBLIC_GOOGLE_ANALYTICS"
 
       - name: Build
+        env:
+          NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ vars.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
         run: |
           npm ci --legacy-peer-deps
           npm run build
