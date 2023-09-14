@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+env:
+  NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ vars.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
+
+
   workflow_dispatch:
 
 jobs:
