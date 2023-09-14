@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/orensebnem/orensebnem.github.io/compare/v1.3.5...v1.3.6) (2023-09-14)
+
+
+### Bug Fixes
+
+* **github actions:** environment ([2189932](https://github.com/orensebnem/orensebnem.github.io/commit/2189932cf9e3a6f4831ec8906dbaa5f49b46ca7d))
+
 ## [1.3.5](https://github.com/orensebnem/orensebnem.github.io/compare/v1.3.4...v1.3.5) (2023-09-14)
 
 
