@@ -35,11 +35,14 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
 
-      - name: Build
+      - name: Environments
         env:
           NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ vars.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
         run: |
           echo "$NEXT_PUBLIC_GOOGLE_ANALYTICS"
+
+      - name: Build
+        run: |
           npm ci --legacy-peer-deps
           npm run build
           npm run export
