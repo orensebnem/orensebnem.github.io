@@ -12,10 +12,11 @@ import '@fontsource/handlee/400.css';
 import '@fontsource/open-sans/500.css'
 import '@fontsource/open-sans/500-italic.css'
 import Script from "next/script";
+import React from "react";
 
 hljs.registerLanguage('gherkin', gherkin);
 
-function MyApp({Component, pageProps}: AppProps) {
+const MyApp = ({Component, pageProps}: AppProps) => {
     const {colorMode, toggleColorMode} = useColorMode();
 
     return (

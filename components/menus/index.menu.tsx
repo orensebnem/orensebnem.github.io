@@ -7,11 +7,15 @@ export interface SMenuProps {
     href: string;
     hasPageTitle?: boolean,
     size?: number,
+    isLink?: boolean,
+
 }
 
-const SMenu = ({label, selected, href, size = 16}: SMenuProps) => {
+const SMenu = ({label, selected, href, size = 16, isLink}: SMenuProps) => {
 
     const [hover, setHover] = useState(false);
+
+    const linkHref = isLink ? href : `#${href}`;
 
     return (
         <div onMouseEnter={()=> setHover(true)}
@@ -20,7 +24,7 @@ const SMenu = ({label, selected, href, size = 16}: SMenuProps) => {
                  textDecoration: hover ? "underline" : "none",
                  cursor: hover ? "pointer" : "default"
              }}>
-            <Link href={`#${href}`}>
+            <Link href={linkHref}>
                 <Text opacity={selected ? 1 : 0.55}
                       fontSize={size}>{label}
                 </Text>

@@ -13,7 +13,9 @@ const IndexPage: React.FC<{
 }> = ({indexPageData, portfolios}) => {
 
     return (
-        <PortfoliosPage data={portfolios}/>
+        <>
+            <PortfoliosPage data={portfolios}/>
+        </>
     );
 };
 

@@ -20,7 +20,7 @@ interface SMenusProps {
 
 export const SMenus = ({data}: SMenusProps) => {
 
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const {isOpen, onOpen, onClose} = useDisclosure()
 
     const getMenusComponent = () => {
         return data?.map((menu) => {
@@ -28,7 +28,9 @@ export const SMenus = ({data}: SMenusProps) => {
                 href={menu.href}
                 key={menu.label}
                 label={menu.label}
-                selected={menu.selected}/>
+                selected={menu.selected}
+                hasPageTitle={menu.hasPageTitle}
+                isLink={menu.isLink}/>
         })
     }
 
@@ -39,7 +41,9 @@ export const SMenus = ({data}: SMenusProps) => {
                 href={menu.href}
                 key={menu.label}
                 label={menu.label}
-                selected={menu.selected}/>
+                selected={menu.selected}
+                hasPageTitle={menu.hasPageTitle}
+                isLink={menu.isLink}/>
         })
     }
 
@@ -50,9 +54,9 @@ export const SMenus = ({data}: SMenusProps) => {
                 size="lg"
                 mr={2}
                 icon={
-                    <HamburgerIcon />
+                    <HamburgerIcon/>
                 }
-                onClick={()=> onOpen()}
+                onClick={() => onOpen()}
                 display={['flex', 'flex', 'none', 'none']}
             />
             <Stack direction="row" gap={10} display={["none", "none", "flex", "flex"]}>
@@ -60,10 +64,10 @@ export const SMenus = ({data}: SMenusProps) => {
             </Stack>
 
             <Modal onClose={onClose} size="full" isOpen={isOpen}>
-                <ModalOverlay />
+                <ModalOverlay/>
                 <ModalContent>
                     <ModalHeader fontSize={40}>MENU</ModalHeader>
-                    <ModalCloseButton />
+                    <ModalCloseButton/>
                     <ModalBody>
                         {getMenusComponentForMobile()}
                     </ModalBody>

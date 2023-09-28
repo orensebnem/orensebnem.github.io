@@ -27,13 +27,14 @@ export const SLayout = ({children, sMenuSelected, backgroundColor}: SLayoutProps
             label: "portfolios",
             selected: sMenuSelected === "portfolios",
             href: "PORTFOLIOS",
-            hasPageTitle: true,
-        }, /*{
-            label: "blog",
-            selected: sMenuSelected === "blog",
-            href: "blog",
-            hasPageTitle: true,
+            hasPageTitle: false,
         }, {
+            label: "side projects",
+            selected: sMenuSelected === "sideProjects",
+            href: "/side-projects",
+            hasPageTitle: true,
+            isLink: true,
+        }, /*{
             label: "contact",
             selected: sMenuSelected === "contact",
             href: "contact",

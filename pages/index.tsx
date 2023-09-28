@@ -7,7 +7,6 @@ import {getAllPortfolio} from "../utils/mdx";
 import {indexPageData} from "../data/indexPageData";
 import {PortfoliosPage} from "../components/pages/portfolios";
 
-
 const IndexPage: React.FC<{
     indexPageData: IndexPageData;
     portfolios: PortfolioModel[];

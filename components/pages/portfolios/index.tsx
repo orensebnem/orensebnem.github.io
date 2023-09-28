@@ -1,5 +1,4 @@
 import {SPortfolios} from "../../portfolios";
-import {SLayout} from "../../layout/index";
 import PortfolioModel from "../../../interfaces/PortfolioModel";
 import Section from "../../section";
 

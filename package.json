@@ -6,7 +6,7 @@
     "dev": "next",
     "dev-local": "source $HOME/.nvm/nvm.sh; nvm use 18.9.0 && next",
     "build": "next build && next export",
-    "build-local": "source $HOME/.nvm/nvm.sh; nvm use 15.10.0 && next build && next export",
+    "build-local": "source $HOME/.nvm/nvm.sh; nvm use 18.9.0 && next build && next export",
     "start": "next start",
     "export": "next export",
     "type-check": "tsc",
@@ -40,6 +40,7 @@
     "next-seo": "^5.4.0",
     "postcss": "^8.4.16",
     "react": "^18.2.0",
+    "react-chrono": "^2.2.4",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-parallax-tilt": "^1.7.73",
@@ -70,7 +71,7 @@
     "babel-loader": "^8.2.5",
     "eslint": "8.17.0",
     "eslint-config-next": "^13.4.19",
-    "typescript": "^4.7.3",
-    "webpack": "^5.74.0"
+    "typescript": "^4.9.5",
+    "webpack": "5.76.0"
   }
 }
