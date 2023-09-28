@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.3.11...v1.4.0) (2023-09-28)
+
+
+### Features
+
+* **side projects:** add ([571c3d5](https://github.com/orensebnem/orensebnem.github.io/commit/571c3d5970ebd5f0bffd766e843793a27a6f5c99))
+
 ## [1.3.11](https://github.com/orensebnem/orensebnem.github.io/compare/v1.3.10...v1.3.11) (2023-09-14)
 
 
