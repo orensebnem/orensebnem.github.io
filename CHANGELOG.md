@@ -1,3 +1,11 @@
+## [1.4.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.4.0...v1.4.1) (2025-01-29)
+
+
+### Bug Fixes
+
+* **avatar:** image ([1be73cb](https://github.com/orensebnem/orensebnem.github.io/commit/1be73cbb96875d639374b030b86bc66a94dfaf13))
+* **workflow:** fix node version to 20 ([09799ec](https://github.com/orensebnem/orensebnem.github.io/commit/09799ecf5ad52db8adedc0385f8d11531e92e2e0))
+
 # [1.4.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.3.11...v1.4.0) (2023-09-28)
 
 
