@@ -18,12 +18,13 @@ export const SLayout = ({children, sMenuSelected, backgroundColor}: SLayoutProps
             href: "Product manager",
             hasPageTitle: false,
         },
-        /*{
+        {
             label: "resume",
             selected: sMenuSelected === "resume",
-            href: "resume",
+            href: "/resume",
             hasPageTitle: true,
-        }*/ {
+            isLink: true,
+        }, {
             label: "portfolios",
             selected: sMenuSelected === "portfolios",
             href: "PORTFOLIOS",
