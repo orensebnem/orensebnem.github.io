@@ -13,6 +13,7 @@ import { useReactToPrint } from "react-to-print";
 import { WorkExperience } from "./WorkExperience";
 import LayoutSideProject from "../../components/LayoutSideProject";
 import { Skills } from "./Skills";
+import { MeCard } from "./MeCard";
 
 const PagesResume = () => {
   const componentRef = useRef<HTMLDivElement>(null);
@@ -195,12 +196,9 @@ const PagesResume = () => {
             subItems: [{ description: "Native" }],
           },
         ],
-      } 
-    ]
+      },
+    ],
   };
-
-  
-
 
   const moulaExperience = {
     role: "Product Owner",
@@ -421,9 +419,26 @@ const PagesResume = () => {
     ],
   };
 
+  const softwareDevelopmentExperience = {
+    role: "Software Development Experience",
+    company: "Yapı Kredi Bank (UniCredit), Softtech (IsBank), TUHH",
+    period: "2009 - 2015", // Tam tarihleri belirtmemişsiniz, 6 yıllık deneyime göre tahmini tarih aralığı
+    items: [
+      {
+        description: "6 years of software development experience at Yapı Kredi Bank (UniCredit), Softtech (IsBank), TUHH, focusing on financial and credit card projects."
+      },
+      {
+        description: "Led digital transformation, optimized financial processes, and collaborated with cross-functional teams in banking, payments, and credit cards"
+      },
+      {
+        description: "Tech stack: Java, SQL, Rest Services, API, JSP/JSF, JavaScript"
+      }
+    ]
+  };
+
   return (
     <LayoutSideProject title="Resume">
-      <Box position="relative" mb={8}>
+      <Box position="relative">
         <Button
           className="no-print"
           leftIcon={<DownloadIcon />}
@@ -432,20 +447,29 @@ const PagesResume = () => {
           position="fixed"
           top="4"
           right="4"
+          mt="50"
+          mr="150"
           zIndex="999"
-          _hover={{ bg: "blue.600" }}
+          fontSize="1.1vw"  // Diğer metinlerle aynı ölçekte
+          padding="calc(0.8vw) calc(1.2vw)"  // Responsive padding
+          minWidth="auto"  // Butonun içeriğe göre boyutlanması için
+          height="auto"  // Varsayılan yüksekliği kaldırıyoruz
         >
-          PDF İndir
+          Download Resume
         </Button>
 
-        <div style={{ width: "100%", height: "100%" }}>
-          <Container maxW="6xl" py={8} ref={componentRef}>
+        <div ref={componentRef}>
+          <Box maxW="100%" overflow="hidden">
+
+          <MeCard />
+
             <Text
-              fontSize="lg"
+              fontSize="1.2vw"
               color="gray.700"
               lineHeight="tall"
               mb={6}
               fontWeight="medium"
+              px={4}
             >
               Product Manager with a strong technical background and
               user-centric design approach, and a MBA. Skilled in product
@@ -454,9 +478,29 @@ const PagesResume = () => {
               scalable solutions.
             </Text>
 
-            <Grid templateColumns={{ base: "1fr", md: "2fr 1fr" }} gap={8}>
-              {/* Sol Kolon - İş Deneyimleri */}
-              <GridItem>
+            {/* Print için özel class ekleyelim */}
+            <Box
+              className="resume-layout"
+              display="flex"
+              px={4}
+              sx={{
+                "@media print": {
+                  display: "flex !important",
+                  flexDirection: "row !important",
+                  gap: "2rem !important",
+                },
+              }}
+            >
+              <Box
+                flex="2"
+                pr={8}
+                sx={{
+                  "@media print": {
+                    flex: "2 !important",
+                    paddingRight: "2rem !important",
+                  },
+                }}
+              >
                 <VStack spacing={8} align="stretch">
                   <WorkExperience experience={keepspeechWorkExperience} />
                   <WorkExperience experience={pccwGlobalExperience} />
@@ -466,15 +510,22 @@ const PagesResume = () => {
                   <WorkExperience experience={proquoExperience} />
                   <WorkExperience experience={hsbcExperience} />
                   <WorkExperience experience={turkcellExperience} />
+                  <WorkExperience experience={softwareDevelopmentExperience} />
                 </VStack>
-              </GridItem>
+              </Box>
 
-              {/* Sağ Kolon - Yetenekler */}
-              <GridItem>
+              <Box
+                flex="1"
+                sx={{
+                  "@media print": {
+                    flex: "1 !important",
+                  },
+                }}
+              >
                 <Skills sections={skillsData.sections} />
-              </GridItem>
-            </Grid>
-          </Container>
+              </Box>
+            </Box>
+          </Box>
         </div>
       </Box>
     </LayoutSideProject>
