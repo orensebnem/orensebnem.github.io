@@ -12843,6 +12843,11 @@ react-style-singleton@^2.2.1:
     invariant "^2.2.4"
     tslib "^2.0.0"
 
+react-to-print@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.npmjs.org/react-to-print/-/react-to-print-3.0.5.tgz"
+  integrity sha512-Z15MwMOzYCHWi26CZeFNwflAg7Nr8uWD6FTj+EkfIOjYyjr0MXGbI0c7rF4Fgrbj3XG9hFndb1ourxpPz2RAiA==
+
 react-transition-group@2.9.0:
   version "2.9.0"
   resolved "https://registry.npmjs.org/react-transition-group/-/react-transition-group-2.9.0.tgz"
