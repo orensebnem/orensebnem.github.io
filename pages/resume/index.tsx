@@ -10,10 +10,10 @@ import {
 } from "@chakra-ui/react";
 import { DownloadIcon } from "@chakra-ui/icons";
 import { useReactToPrint } from "react-to-print";
-import { WorkExperience } from "./WorkExperience";
+import WorkExperience from "./WorkExperience";
 import LayoutSideProject from "../../components/LayoutSideProject";
-import { Skills } from "./Skills";
-import { MeCard } from "./MeCard";
+import Skills from "./Skills";
+import MeCard from "./MeCard";
 
 const PagesResume = () => {
   const componentRef = useRef<HTMLDivElement>(null);

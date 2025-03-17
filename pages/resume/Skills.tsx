@@ -18,10 +18,10 @@ interface SkillsProps {
   sections: SkillSection[];
 }
 
-export const Skills = ({ sections }: SkillsProps) => {
+const Skills = ({ sections }: SkillsProps) => {
   return (
     <VStack spacing={2} align="stretch">
-      {sections.map((section, sectionIndex) => (
+      {sections?.map((section, sectionIndex) => (
         <Box key={sectionIndex}>
           <Text 
             fontSize="1.5vw"
@@ -31,7 +31,7 @@ export const Skills = ({ sections }: SkillsProps) => {
             {section.title}
           </Text>
           <VStack align="start" spacing={2}>
-            {section.items.map((item, itemIndex) => (
+            {section.items?.map((item, itemIndex) => (
               <Box key={itemIndex}>
                 <Text 
                   fontSize="1.3vw"
@@ -44,7 +44,7 @@ export const Skills = ({ sections }: SkillsProps) => {
                   align="start" 
                   spacing={2}
                 >
-                  {item.subItems.map((subItem, subItemIndex) => (
+                  {item.subItems?.map((subItem, subItemIndex) => (
                     <Text 
                       key={subItemIndex} 
                       pl={4}
@@ -63,3 +63,5 @@ export const Skills = ({ sections }: SkillsProps) => {
     </VStack>
   );
 };
+
+export default Skills;

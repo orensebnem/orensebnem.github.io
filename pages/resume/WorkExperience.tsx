@@ -6,15 +6,15 @@ interface WorkExperienceItem {
 
 interface WorkExperienceProps {
   experience: {
-    role: string;
-    company: string;
-    period: string;
+    role?: string;
+    company?: string;
+    period?: string;
     website?: string;
-    items: WorkExperienceItem[];
+    items?: WorkExperienceItem[];
   };
 }
 
-export const WorkExperience = ({ experience }: WorkExperienceProps) => {
+const WorkExperience = ({ experience }: WorkExperienceProps) => {
   return (
     <Box width="100%">
       <Text 
@@ -22,12 +22,12 @@ export const WorkExperience = ({ experience }: WorkExperienceProps) => {
         fontWeight="bold"
         mb={2}
       >
-        {experience.role}
+        {experience?.role}
       </Text>
 
-      {experience.website ? (
+      {experience?.website ? (
         <Link 
-          href={experience.website}
+          href={experience?.website}
           isExternal
           fontSize="1.3vw"
           fontWeight="medium"
@@ -35,7 +35,7 @@ export const WorkExperience = ({ experience }: WorkExperienceProps) => {
           mb={1}
           color="blue.500"
         >
-          {experience.company}
+          {experience?.company}
         </Link>
       ) : (
         <Text
@@ -43,7 +43,7 @@ export const WorkExperience = ({ experience }: WorkExperienceProps) => {
           fontWeight="medium"
           mb={1}
         >
-          {experience.company}
+          {experience?.company}
         </Text>
       )}
 
@@ -52,11 +52,11 @@ export const WorkExperience = ({ experience }: WorkExperienceProps) => {
         color="gray.600"
         mb={3}
       >
-        {experience.period}
+        {experience?.period}
       </Text>
 
       <VStack spacing={2} align="start">
-        {experience.items.map((item, index) => (
+        {experience?.items?.map((item, index) => (
           <Text 
             key={index}
             fontSize="1.1vw"
@@ -68,4 +68,6 @@ export const WorkExperience = ({ experience }: WorkExperienceProps) => {
       </VStack>
     </Box>
   );
-}; 
+};
+
+export default WorkExperience;

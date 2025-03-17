@@ -1,7 +1,7 @@
 import { Box, HStack, Image, Link, Text, VStack } from "@chakra-ui/react";
 import { FaMapMarkerAlt, FaGlobe, FaLinkedin } from "react-icons/fa";
 
-export const MeCard = () => {
+const MeCard = () => {
   return (
     <Box 
       width="100%" 
@@ -82,3 +82,5 @@ export const MeCard = () => {
     </Box>
   );
 };
+
+export default MeCard;
