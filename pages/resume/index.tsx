@@ -46,26 +46,24 @@ const PagesResume = () => {
         items: [
           {
             title: "SCALED AGILE",
-            subItems: [
-              { description: "Certified SAFe 6 PM/PO" }
-            ]
+            subItems: [{ description: "Certified SAFe 6 PM/PO" }],
           },
           {
             title: "SCRUM.ORG",
             subItems: [
               { description: "Professional Scrum Product Owner" },
-              { description: "Professional Scrum Master I" }
-            ]
+              { description: "Professional Scrum Master I" },
+            ],
           },
           {
             title: "GOOGLE",
             subItems: [
               { description: "Google Data Analytics" },
               { description: "Google Analytics IQ" },
-              { description: "Product Design" }
-            ]
-          }
-        ]
+              { description: "Product Design" },
+            ],
+          },
+        ],
       },
       {
         title: "CORE COMPETENCES",
@@ -80,13 +78,128 @@ const PagesResume = () => {
               { description: "Backlog Management" },
               { description: "Feature Ideation" },
               { description: "Agile ceremonies" },
-              { description: "Data-Driven Development" }
-            ]
-          }
-        ]
-      }
+              { description: "Data-Driven Development" },
+              { description: "Delivery Management" },
+              { description: "Team building" },
+              { description: "User Story Writing" },
+              { description: "Engineering Collaboration" },
+              { description: "Scalable System Design" },
+            ],
+          },
+        ],
+      },
+      {
+        title: "DESIGN",
+        items: [
+          {
+            title: "UX",
+            subItems: [
+              { description: "User Testing" },
+              { description: "Design Sprints" },
+              { description: "Wireframing" },
+              { description: "Prototyping" },
+              { description: "Experimentation" },
+              { description: "A/B Testing" },
+            ],
+          },
+        ],
+      },
+      {
+        title: "BUSINESS ANALYSIS",
+        items: [
+          {
+            title: "Data analysis",
+            subItems: [
+              { description: "KPIs & Success metrics" },
+              { description: "Relationship building" },
+              { description: "Negotiation" },
+              { description: "Requirements elicitation" },
+              { description: "Project & Stakeholder management" },
+              { description: "Problem Solving" },
+            ],
+          },
+        ],
+      },
+      {
+        title: "TOOLS & TECHNOLOGIES",
+        items: [
+          {
+            title: "Tools",
+            subItems: [
+              { description: "JIRA" },
+              { description: "Confluence" },
+              { description: "Aha!" },
+              { description: "FigJam" },
+              { description: "Miro" },
+              { description: "Gliffy" },
+              { description: "Lucid Charts" },
+              { description: "LookerStudio" },
+              { description: "Camunda Workflow Process Automation" },
+              { description: "Sendgrid" },
+              { description: "Marketing Analytics" },
+              { description: "FreshMarketer" },
+            ],
+          },
+        ],
+      },
+
+      {
+        title: "HONOURS AND AWARDS",
+        items: [
+          {
+            title: "Honours and Awards",
+            subItems: [
+              {
+                description:
+                  "2 International Patents on Collection Service offers on Cloud",
+              },
+              {
+                description:
+                  "German Academic Exchange Service (DAAD) Scholarship",
+              },
+              { description: "Honour Class of University of Istanbul" },
+            ],
+          },
+        ],
+      },
+      {
+        title: "EDUCATION",
+        items: [
+          {
+            title: "Executive MBA",
+            subItems: [
+              { description: "Bahcesehir University" },
+              { description: "MSc Information and Communication Systems" },
+              { description: "Technical University of Hamburg (TUHH)" },
+            ],
+          },
+          {
+            title: "BSc Electronics Engineering",
+            subItems: [{ description: "University of Istanbul" }],
+          },
+        ],
+      },
+      {
+        title: "LANGUAGE SKILLS",
+        items: [
+          {
+            title: "English",
+            subItems: [{ description: "Advanced" }],
+          },
+          {
+            title: "German",
+            subItems: [{ description: "Intermediate" }],
+          },
+          {
+            title: "Turkish",
+            subItems: [{ description: "Native" }],
+          },
+        ],
+      } 
     ]
   };
+
+  
 
 
   const moulaExperience = {
@@ -325,7 +438,7 @@ const PagesResume = () => {
           PDF İndir
         </Button>
 
-        <div  style={{ width: "100%", height: "100%" }}>
+        <div style={{ width: "100%", height: "100%" }}>
           <Container maxW="6xl" py={8} ref={componentRef}>
             <Text
               fontSize="lg"
@@ -334,11 +447,11 @@ const PagesResume = () => {
               mb={6}
               fontWeight="medium"
             >
-                Product Manager with a strong technical background and
-                user-centric design approach, and a MBA. Skilled in product
-                strategy, platform optimization through analytics, and
-                collaboration with engineers, designers, and data teams to
-                develop scalable solutions.
+              Product Manager with a strong technical background and
+              user-centric design approach, and a MBA. Skilled in product
+              strategy, platform optimization through analytics, and
+              collaboration with engineers, designers, and data teams to develop
+              scalable solutions.
             </Text>
 
             <Grid templateColumns={{ base: "1fr", md: "2fr 1fr" }} gap={8}>
