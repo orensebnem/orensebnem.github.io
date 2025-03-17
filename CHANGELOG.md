@@ -1,3 +1,21 @@
+# [1.5.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.4.1...v1.5.0) (2025-03-17)
+
+
+### Bug Fixes
+
+* **deploy:** github actions ([b5e392d](https://github.com/orensebnem/orensebnem.github.io/commit/b5e392df6baad93cc8efe43c5035ce6bcafc6535))
+* **layout:** flex ([4f37be0](https://github.com/orensebnem/orensebnem.github.io/commit/4f37be0861e40643a4c6fa56217b37ebb71c9d0b))
+* **package:** lock files ([3af890c](https://github.com/orensebnem/orensebnem.github.io/commit/3af890c506539afaedd4e379b23127ec8455fea3))
+* **resume:** page ([ef22408](https://github.com/orensebnem/orensebnem.github.io/commit/ef22408e7c23c2310123166680c7240697d23ac7))
+* **resume:** responsive ([f91e1c0](https://github.com/orensebnem/orensebnem.github.io/commit/f91e1c090a58e4f055519a12a3a12145dff18b17))
+* **workexperience, skills:** responsive text ([4f781e1](https://github.com/orensebnem/orensebnem.github.io/commit/4f781e1d3a394ec8b422de7d503917751e368cd2))
+
+
+### Features
+
+* **pdf:** export ([24c5cfa](https://github.com/orensebnem/orensebnem.github.io/commit/24c5cfa63bb6b58956822c9301e4fcdcc88450d1))
+* **skills:** add ([2b50371](https://github.com/orensebnem/orensebnem.github.io/commit/2b50371756b20f1cf8ab280a160f23016d2fba85))
+
 ## [1.4.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.4.0...v1.4.1) (2025-01-29)
 
 
