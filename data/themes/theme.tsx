@@ -1,165 +1,172 @@
-import {extendTheme} from '@chakra-ui/react';
+import { extendTheme } from "@chakra-ui/react";
 
 const h1 = {
-    fontSize: ['xl', '2xl', '4xl', '6xl'],
-    fontFamily: "primary",
-    fontWeight: 600,
-    marginLeft: 3,
-}
-
-export const themeOverride = {
-    breakpoints: {
-        sm: "320px",
-        md: "768px",
-        lg: "960px",
-        xl: "1200px",
-        "2xl": "1536px",
-    },
-    backgroundColor: {
-        primary: "red",
-    },
-    fonts: {
-        caveat: "Caveat",
-        primary: "Roboto",
-        secondary: "Open Sans",
-    },
-    textStyles: {
-        h1,
-    },
-    fontSizes: {
-        xs: "0.75rem",
-        sm: "0.875rem",
-        md: "1rem",
-        lg: "1.125rem",
-        xl: "1.25rem",
-        "2xl": "1.5rem",
-        "3xl": "1.875rem",
-        "4xl": "2.25rem",
-        "5xl": "3rem",
-        "6xl": "3.75rem",
-        "7xl": "4.5rem",
-        "8xl": "6rem",
-        "9xl": "8rem",
-    },
-    colors: {
-        transparent: "transparent",
-        black: "#000",
-        white: "#FFF",
-        primary: "azure",
-        secondary: "#000",
-        accent: "cadetblue",
-        text: "#FFF",
-    },
-    lineHeight: {
-        xs: "0.75rem",
-        sm: "0.875rem",
-        md: "1rem",
-        lg: "1.125rem",
-        xl: "1.25rem",
-        "2xl": "1.5rem",
-        "3xl": "1.875rem",
-        "4xl": "2.25rem",
-        "5xl": "3rem",
-        "6xl": "3.75rem",
-        "7xl": "4.5rem",
-        "8xl": "6rem",
-        "9xl": "8rem",
-    },
-    components: {
-        Text: {
-            variants: {
-                default: {
-                    color: "text",
-                    transition: "color 0.5s ease"
-                },
-                hover: {
-                    color: "accent",
-                    transition: "color 0.5s ease"
-                }
-            }
-        },
-        Box: {
-            variants: {
-                default: {
-                    backgroundColor: "primary",
-                    transition: "background-color 0.5s ease"
-                },
-                hover: {
-                    backgroundColor: "accent",
-                    transition: "background-color 0.5s ease"
-                }
-            }
-        }
-    },
-    config: {
-        initialColorMode: "light",
-        useSystemColorMode: false
-    },
-    styles: {
-        global: {
-            '.mdx-prose': {
-                a: {
-                    color: "secondary.400"
-                },
-                h1,
-                h2: {
-                    fontSize: '3xl',
-                    color: "secondary.400",
-                    mb: 2,
-                    fontFamily: "secondary",
-                    ml: 3,
-                },
-                h3: {
-                    fontSize: '2xl',
-                    fontFamily: "primary",
-                    fontWeight: "bold",
-                    mb: 2
-
-                },
-                p: {
-                    fontSize: ['md', 'lg', 'xl', '2xl'],
-                    ml: '4',
-                    alignSelf: "center",
-                    fontFamily: "primary",
-                    fontWeight: 400,
-                    mt: 2,
-                    mb: 4
-                },
-                ul: {
-                    margin: "revert",
-                    padding: "revert",
-                    fontSize: ['md', 'lg', 'xl', '2xl'],
-                    alignSelf: "center",
-                    fontFamily: "primary",
-                    fontWeight: 400,
-                    mt: 4
-                },
-                li: {
-                    mb: 3
-                },
-                ol: {
-                    margin: "revert",
-                    padding: "revert",
-                    fontSize: ['md', 'lg', 'xl', '2xl'],
-                    alignSelf: "center",
-                    fontFamily: "primary",
-                    fontWeight: 400,
-                },
-                code: {
-                    whiteSpace: "pre-wrap",
-                },
-                pre: {
-                    whiteSpace: "pre-wrap",
-                    mb: 5
-                },
-            },
-        }
-    }
+  fontSize: ["xl", "2xl", "4xl", "6xl"],
+  fontFamily: "primary",
+  fontWeight: 600,
+  marginLeft: 3,
 };
 
+export const themeOverride = {
+  global: {
+    ".responsive-text-xl": {
+      fontSize: ["18px", "20px", "22px", "24px"], // sm, md, lg, xl breakpoints
+    },
+    ".responsive-text-lg": {
+      fontSize: ["16px", "18px", "19px", "20px"],
+    },
+    ".responsive-text-md": {
+      fontSize: ["14px", "15px", "16px", "18px"],
+    },
+  },
+  breakpoints: {
+    sm: "320px",
+    md: "768px",
+    lg: "960px",
+    xl: "1200px",
+    "2xl": "1536px",
+  },
+  backgroundColor: {
+    primary: "red",
+  },
+  fonts: {
+    caveat: "Caveat",
+    primary: "Roboto",
+    secondary: "Open Sans",
+  },
+  textStyles: {
+    h1,
+  },
+  fontSizes: {
+    xs: "0.75rem",
+    sm: "0.875rem",
+    md: "1rem",
+    lg: "1.125rem",
+    xl: "1.25rem",
+    "2xl": "1.5rem",
+    "3xl": "1.875rem",
+    "4xl": "2.25rem",
+    "5xl": "3rem",
+    "6xl": "3.75rem",
+    "7xl": "4.5rem",
+    "8xl": "6rem",
+    "9xl": "8rem",
+  },
+  colors: {
+    transparent: "transparent",
+    black: "#000",
+    white: "#FFF",
+    primary: "azure",
+    secondary: "#000",
+    accent: "cadetblue",
+    text: "#FFF",
+  },
+  lineHeight: {
+    xs: "0.75rem",
+    sm: "0.875rem",
+    md: "1rem",
+    lg: "1.125rem",
+    xl: "1.25rem",
+    "2xl": "1.5rem",
+    "3xl": "1.875rem",
+    "4xl": "2.25rem",
+    "5xl": "3rem",
+    "6xl": "3.75rem",
+    "7xl": "4.5rem",
+    "8xl": "6rem",
+    "9xl": "8rem",
+  },
+  components: {
+    Text: {
+      variants: {
+        default: {
+          color: "text",
+          transition: "color 0.5s ease",
+        },
+        hover: {
+          color: "accent",
+          transition: "color 0.5s ease",
+        },
+      },
+    },
+    Box: {
+      variants: {
+        default: {
+          backgroundColor: "primary",
+          transition: "background-color 0.5s ease",
+        },
+        hover: {
+          backgroundColor: "accent",
+          transition: "background-color 0.5s ease",
+        },
+      },
+    },
+  },
+  config: {
+    initialColorMode: "light",
+    useSystemColorMode: false,
+  },
+  styles: {
+    global: {
+      ".mdx-prose": {
+        a: {
+          color: "secondary.400",
+        },
+        h1,
+        h2: {
+          fontSize: "3xl",
+          color: "secondary.400",
+          mb: 2,
+          fontFamily: "secondary",
+          ml: 3,
+        },
+        h3: {
+          fontSize: "2xl",
+          fontFamily: "primary",
+          fontWeight: "bold",
+          mb: 2,
+        },
+        p: {
+          fontSize: ["md", "lg", "xl", "2xl"],
+          ml: "4",
+          alignSelf: "center",
+          fontFamily: "primary",
+          fontWeight: 400,
+          mt: 2,
+          mb: 4,
+        },
+        ul: {
+          margin: "revert",
+          padding: "revert",
+          fontSize: ["md", "lg", "xl", "2xl"],
+          alignSelf: "center",
+          fontFamily: "primary",
+          fontWeight: 400,
+          mt: 4,
+        },
+        li: {
+          mb: 3,
+        },
+        ol: {
+          margin: "revert",
+          padding: "revert",
+          fontSize: ["md", "lg", "xl", "2xl"],
+          alignSelf: "center",
+          fontFamily: "primary",
+          fontWeight: 400,
+        },
+        code: {
+          whiteSpace: "pre-wrap",
+        },
+        pre: {
+          whiteSpace: "pre-wrap",
+          mb: 5,
+        },
+      },
+    },
+  },
+};
 
-const theme = extendTheme(
-    themeOverride
-);
+const theme = extendTheme(themeOverride);
 
 export default theme;
