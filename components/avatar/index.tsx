@@ -12,7 +12,7 @@ export const SAvatar = ({imageName}: SAvatarProps) => {
                 maxWidth={500}
                 style={{borderTopRightRadius: 50}}
                 src={`/images/${imageName}`}
-                alt="Sebnem Oren"
+                alt="Sebnem"
             />
     )
 }

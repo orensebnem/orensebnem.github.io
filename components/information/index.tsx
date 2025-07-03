@@ -18,7 +18,7 @@ export const SInformation = ({
         <Stack id={title}
                direction="row"
                justifyContent='center'>
-            <Flex direction='column' marginTop={20} marginLeft={20}>
+            <Flex direction='column' marginTop={140} marginLeft={20}>
                 <Text fontSize="4xl"
                       color='black'
                       fontWeight="bold">{subtitle}</Text>

@@ -19,7 +19,7 @@ const MeCard = () => {
         >
           <Image
             src="/images/sebnemWithBackground.png"
-            alt="Sebnem Oren"
+            alt="Sebnem"
             borderRadius="full"
             width="100%"
             height="100%"

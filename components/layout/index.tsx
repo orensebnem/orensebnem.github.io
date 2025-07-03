@@ -54,7 +54,7 @@ export const SLayout = ({children, sMenuSelected, backgroundColor}: SLayoutProps
     const sAvatarProps: SAvatarProps = {imageName: "sebnemWithBackground.png"}
     const sInformationProps: SInformationProps = {
         title: "Product manager",
-        subtitle: "Sebnem Oren",
+        subtitle: "Hi, I'm Sebnem",
         /*description: `
         Product Manager passionate about solving problems, improving lives through data-driven products, and delivering impactful user experiences with cross-functional teams
         `*/
