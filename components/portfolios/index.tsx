@@ -12,9 +12,9 @@ export const SPortfolios = ({data}: SPortfoliosProps) => {
         <Flex
             wrap="wrap"
             justifyContent="center"
-            gap='10'
+            gap='15'
             mt={[0, 0, 0, 3]}
-            data-testid="portfolios">
+            data-testid="portfolio">
             {data?.map((item) => {
                 const {
                     headerAnimation,

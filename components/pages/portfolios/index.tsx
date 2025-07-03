@@ -7,7 +7,7 @@ export const PortfoliosPage = ({data}: { data: PortfolioModel[] }) => {
 
     return (
         <>
-            <Section title="PORTFOLIOS"/>
+            <Section title="PORTFOLIO"/>
             <SPortfolios data={data}/>
         </>
     )

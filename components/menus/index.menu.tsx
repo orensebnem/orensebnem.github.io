@@ -18,11 +18,12 @@ const SMenu = ({label, selected, href, size = 16, isLink}: SMenuProps) => {
     const linkHref = isLink ? href : `#${href}`;
 
     return (
-        <div onMouseEnter={()=> setHover(true)}
-             onMouseLeave={()=> setHover(false)}
+        <div onMouseEnter={() => setHover(true)}
+             onMouseLeave={() => setHover(false)}
              style={{
                  textDecoration: hover ? "underline" : "none",
-                 cursor: hover ? "pointer" : "default"
+                 cursor: hover ? "pointer" : "default",
+                 color:'black'
              }}>
             <Link href={linkHref}>
                 <Text opacity={selected ? 1 : 0.55}

@@ -1,10 +1,13 @@
-import {Stack, Text} from "@chakra-ui/react";
+import {Flex, Stack, Text} from "@chakra-ui/react";
+import {SAvatar, SAvatarProps} from "../avatar";
 
 export interface SInformationProps {
     title: string;
     subtitle: string;
     description: string;
 }
+
+const sAvatarProps: SAvatarProps = {imageName: "sebnemWithBackground.png"}
 
 export const SInformation = ({
                                  title,
@@ -13,16 +16,15 @@ export const SInformation = ({
                              }: SInformationProps) => {
     return (
         <Stack id={title}
-            direction="column"
-               width={400}
-               marginLeft={10}
-               marginRight={10}>
-            <Text
-                fontSize={["2xl","2xl","2lg","2xl"]}
-                fontWeight="bold">{title}</Text>
-            <Text fontSize="4xl"
-                  fontWeight="bold">{subtitle}</Text>
-            <Text fontSize={["2xl","2xl","xl","xl"]}>{description}</Text>
+               direction="row"
+               justifyContent='center'>
+            <Flex direction='column' marginTop={20} marginLeft={20}>
+                <Text fontSize="4xl"
+                      color='black'
+                      fontWeight="bold">{subtitle}</Text>
+                <Text fontSize={["small", "medium", "xl", "2xl"]} color='black'>{description}</Text>
+            </Flex>
+            <SAvatar imageName={sAvatarProps.imageName}/>
         </Stack>
     )
 }

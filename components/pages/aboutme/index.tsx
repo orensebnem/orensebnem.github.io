@@ -6,7 +6,7 @@ import {SLayout} from "../../layout/index";
 
 export const AboutMePage = () => {
 
-    const sAvatarProps: SAvatarProps = {imageName: "sebnem.jpeg"}
+    const sAvatarProps: SAvatarProps = {imageName: "sebnemWithBackground.png"}
     const sInformationProps: SInformationProps = {
         title: "Product manager",
         subtitle: "Sebnem Oren",

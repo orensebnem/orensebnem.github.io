@@ -9,16 +9,18 @@ class MyDocument extends Document {
         return {...initialProps};
     }
 
+    //color #629ED9
+
     render() {
         return (
             <Html style={{scrollBehavior: "smooth"}}>
                 <Head/>
 
                 <body style={{
-                    backgroundColor: "#629ED9",
+                    backgroundColor: "black",
                     marginTop: 10,
                     marginBottom: 10,
-                    width: "88%",
+                    width: "80%",
                     margin: "auto"
                 }}>
                 <div

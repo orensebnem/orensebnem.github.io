@@ -31,7 +31,7 @@ Default.args = {
             href: "resume",
             hasPageTitle: true,
         }, {
-            label: "portfolios",
+            label: "portfolio",
             href: "portfolios",
             hasPageTitle: true,
         }, {

@@ -1,6 +1,5 @@
-import {Flex, Spacer, Stack, Text} from "@chakra-ui/react";
 import {SInformation, SInformationProps} from "../information";
-import {SAvatar, SAvatarProps} from "../avatar";
+import {SAvatarProps} from "../avatar";
 
 interface SPersonnelProps {
     avatarProps: SAvatarProps;
@@ -20,17 +19,11 @@ export const SPersonnel = ({
     } = informationProps
 
     return (
-        <Flex
-            flexWrap="wrap"
-            justifyContent="center"
-            alignItems="center"
-            gap={20}
-            width="100%">
-            <SAvatar imageName={imageName}/>
-            <SInformation
-                title={title}
-                subtitle={subtitle}
-                description={description}/>
-        </Flex>
+
+        <SInformation
+            title={title}
+            subtitle={subtitle}
+            description={description}/>
+
     )
 }

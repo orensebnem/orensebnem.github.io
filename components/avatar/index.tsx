@@ -6,23 +6,13 @@ export interface SAvatarProps {
 
 export const SAvatar = ({imageName}: SAvatarProps) => {
     return (
-        <Stack>
             <Image
-                position="absolute"
-                borderRadius='full'
-                marginLeft={4}
-                marginTop={6}
-                boxSize={300}
-                height={300}
+                width='40%'
+                height='0%'
+                maxWidth={500}
+                style={{borderTopRightRadius: 50}}
                 src={`/images/${imageName}`}
                 alt="Sebnem Oren"
             />
-            <Box
-                borderRadius='full'
-                margin={2}
-                boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
-                boxSize={330}
-            />
-        </Stack>
     )
 }

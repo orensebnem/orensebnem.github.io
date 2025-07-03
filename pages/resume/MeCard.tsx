@@ -18,7 +18,7 @@ const MeCard = () => {
           minHeight="80px"
         >
           <Image
-            src="/images/sebnem.jpeg"
+            src="/images/sebnemWithBackground.png"
             alt="Sebnem Oren"
             borderRadius="full"
             width="100%"
