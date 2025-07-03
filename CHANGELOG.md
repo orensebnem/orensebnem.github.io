@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.5.0...v1.6.0) (2025-07-03)
+
+
+### Bug Fixes
+
+* **package:** export for nextjs ([e4509bf](https://github.com/orensebnem/orensebnem.github.io/commit/e4509bfcbce2d14c8f0ba1164eb7f822552c6be2))
+
+
+### Features
+
+* **ui:** update ([d45c18d](https://github.com/orensebnem/orensebnem.github.io/commit/d45c18d975a6eaa2348d4419eef9cfdc1581e5d7))
+
 # [1.5.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.4.1...v1.5.0) (2025-03-17)
 
 
