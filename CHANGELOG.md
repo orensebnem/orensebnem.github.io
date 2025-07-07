@@ -1,3 +1,16 @@
+# [1.7.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.6.0...v1.7.0) (2025-07-07)
+
+
+### Bug Fixes
+
+* **ideas to launch:** remove storybook ([58aa483](https://github.com/orensebnem/orensebnem.github.io/commit/58aa4838fb58e61abfbd6d86d8e8e67d164038f6))
+* **mdx-bundler:** downgrade to 8.0.1 ([5d19fe1](https://github.com/orensebnem/orensebnem.github.io/commit/5d19fe1dc46e552d77e467b6d5c34ea047e752ae))
+
+
+### Features
+
+* **ideas to launch:** section ([3f243cc](https://github.com/orensebnem/orensebnem.github.io/commit/3f243ccb9061f777a918acc0d740b93835ab5abf))
+
 # [1.6.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.5.0...v1.6.0) (2025-07-03)
 
 
