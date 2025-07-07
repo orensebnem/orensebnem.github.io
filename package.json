@@ -35,7 +35,7 @@
     "highlight.js": "^11.6.0",
     "lottie-react": "^2.3.1",
     "luxon": "3.2.1",
-    "mdx-bundler": "^9.0.1",
+    "mdx-bundler": "^8.0.1",
     "next": "15.2.4",
     "next-seo": "^5.4.0",
     "postcss": "8.4.31",
