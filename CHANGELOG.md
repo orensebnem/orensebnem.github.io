@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.7.0...v1.7.1) (2025-07-07)
+
+
+### Bug Fixes
+
+* **editor pro:** image path ([c4e4f11](https://github.com/orensebnem/orensebnem.github.io/commit/c4e4f11d1f7450de61a8f31af41f8e51c2ec834d))
+
 # [1.7.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.6.0...v1.7.0) (2025-07-07)
 
 
