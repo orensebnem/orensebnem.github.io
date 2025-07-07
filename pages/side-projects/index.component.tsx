@@ -28,7 +28,7 @@ const SideProjectComponent = () => {
             }}>
                 <Chrono
                     items={items}
-                    mode="HORIZONTAL"
+                    mode="VERTICAL"
                     showAllCardsHorizontal
                     cardPositionHorizontal="BOTTOM"
                     cardHeight={300}

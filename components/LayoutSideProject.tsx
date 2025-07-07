@@ -15,9 +15,11 @@ const LayoutSideProject: FC<LayoutJournalProps> = ({children, title}) => {
 
     return (
         <Container maxWidth={1000}
+                   height='100%'
                    mt={10}
                    backgroundColor="#FFF"
-                   width="100%">
+                   width="100%"
+                   borderRadius={100}>
             <Head>
                 <title>{title}</title>
                 <meta charSet="utf-8"/>

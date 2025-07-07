@@ -34,9 +34,9 @@ export const SLayout = ({children, sMenuSelected, backgroundColor}: SLayoutProps
             href: "PORTFOLIO",
             hasPageTitle: false,
         }, {
-            label: "side projects",
-            selected: sMenuSelected === "sideProjects",
-            href: "/side-projects",
+            label: "🚀 ideas to launch",
+            selected: sMenuSelected === "ideasToLaunch",
+            href: "/ideas-to-launch",
             hasPageTitle: true,
             isLink: true,
         }, /*{

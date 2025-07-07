@@ -7,11 +7,13 @@ import {DateTime} from 'luxon';
 import remarkGfm from 'remark-gfm';
 import remarkToc from 'remark-toc'
 import rehypeHighlight from "rehype-highlight";
+import PortfolioModel from "../interfaces/JournalModel";
 
 
 export const ROOT = process.cwd();
 export const JOURNALS_PATH = path.join(process.cwd(), "./data/content/journals");
 export const PORTFOLIOS_PATH = path.join(process.cwd(), "./data/content/portfolios");
+export const IDEA_TO_LAUNCH_PATH = path.join(process.cwd(), "./data/content/ideas-to-launch");
 
 const getCompiledMDX = async (source: string) => {
 
@@ -32,11 +34,10 @@ const getCompiledMDX = async (source: string) => {
         );
     }
     // Add your remark and rehype plugins here
-    const remarkPlugins = [remarkGfm, [remarkToc,{tight: true, ordered: true}]];
+    const remarkPlugins = [remarkGfm, [remarkToc, {tight: true, ordered: true}]];
     const rehypePlugins = [rehypeHighlight];
 
     return await bundleMDX({
-        // @ts-ignore
         source, xdmOptions: (options) => {
             // @ts-ignore
             options.remarkPlugins = [
@@ -64,7 +65,81 @@ export const getSingleJournal = async (slug: string) => {
     };
 };
 
-export const getAllJournal = () => {
+export const getAllJournal = async () => {
+    const years = new Set();
+    const months = new Set();
+    const monthlyTotalJournalInformation = {};
+
+    const journals: JournalModel[] = fs
+        .readdirSync(JOURNALS_PATH)
+        .filter((path) => /\.mdx?$/.test(path))
+        .map((fileName) => {
+            const source = getFileContent(fileName, JOURNALS_PATH);
+            const slug = fileName.replace(/\.mdx?$/, "");
+            const {data} = matter(source);
+
+            const time = data.time;
+            const date = new Date(data.date);
+            const month = date.getMonth();
+            const year = date.getFullYear();
+            months.add(month);
+            years.add(year);
+
+            let monthlyTotalJournal = monthlyTotalJournalInformation[`${year}${month}`];
+
+            if (monthlyTotalJournal === undefined) {
+                monthlyTotalJournalInformation[`${year}${month}`]={year, month, total: 1};
+            } else {
+                let total = monthlyTotalJournalInformation[`${year}${month}`].total;
+                total = total + 1;
+                monthlyTotalJournalInformation[`${year}${month}`].total=total;
+
+            }
+
+            return {
+                frontmatter: data,
+                slug: slug,
+            } as JournalModel;
+        });
+
+    return {
+        journals: sortJournals(journals),
+        years: Array
+            .from(years)
+            .sort((after:number,before:number)=> {
+                return before-after
+            }),
+        months: Array.from(months).sort((a: number, b: number) => {
+            return b - a;
+        }), monthlyTotalJournalInformation
+    };
+};
+
+export const getSinglePortfolio = async (slug: string) => {
+    const source = getFileContent(`${slug}.mdx`, PORTFOLIOS_PATH);
+    const {code, frontmatter} = await getCompiledMDX(source);
+
+    return {
+        frontmatter,
+        code,
+    };
+};
+
+
+
+export const getSingleIdeaToLaunch = async (slug: string) => {
+    const source = getFileContent(`${slug}.mdx`, IDEA_TO_LAUNCH_PATH);
+    const {code, frontmatter} = await getCompiledMDX(source);
+
+    return {
+        frontmatter,
+        code,
+    };
+};
+
+
+
+export const getStaticPathsForJournal = () => {
     const journals: JournalModel[] = fs
         .readdirSync(JOURNALS_PATH)
         .filter((path) => /\.mdx?$/.test(path))
@@ -79,21 +154,12 @@ export const getAllJournal = () => {
             } as JournalModel;
         });
 
-    return sortJournals(journals);
-};
-
-export const getSinglePortfolio = async (slug: string) => {
-    const source = getFileContent(`${slug}.mdx`, PORTFOLIOS_PATH);
-    const {code, frontmatter} = await getCompiledMDX(source);
-
-    return {
-        frontmatter,
-        code,
-    };
+    return sortJournals(journals)
+        .map(({slug,frontmatter}) => ({params: {slug, frontmatter}}));
 };
 
 export const getAllPortfolio = () => {
-    const journals: JournalModel[] = fs
+    const portfolios: PortfolioModel[] = fs
         .readdirSync(PORTFOLIOS_PATH)
         .filter((path) => /\.mdx?$/.test(path))
         .map((fileName) => {
@@ -104,11 +170,33 @@ export const getAllPortfolio = () => {
             return {
                 frontmatter: data,
                 slug: slug,
-            } as JournalModel;
+            } as PortfolioModel;
         });
 
-    return sortJournals(journals);
+    return portfolios;
 };
+
+
+export const getAllIdeaToLaunch = () => {
+    const ideasToLaunch: PortfolioModel[] = fs
+        .readdirSync(IDEA_TO_LAUNCH_PATH)
+        .filter((path) => /\.mdx?$/.test(path))
+        .map((fileName) => {
+            const source = getFileContent(fileName, IDEA_TO_LAUNCH_PATH);
+            const slug = fileName.replace(/\.mdx?$/, "");
+            const {data} = matter(source);
+
+            return {
+                frontmatter: data,
+                slug: slug,
+            } as PortfolioModel;
+        });
+
+    return ideasToLaunch;
+};
+
+
+
 
 export const getFileContent = (filename: string, folderPath) => {
     return fs.readFileSync(path.join(folderPath, filename), "utf8");
@@ -117,8 +205,8 @@ export const getFileContent = (filename: string, folderPath) => {
 
 const sortJournals = (journals: JournalModel[]) => {
     return journals.sort((a, b) => {
-        const beforeDate = DateTime.fromFormat(a.frontmatter.date, 'dd/MM/yyyy')
-        const afterDate = DateTime.fromFormat(b.frontmatter.date, 'dd/MM/yyyy')
+        const beforeDate = DateTime.fromFormat(a.frontmatter.date, 'yyyy/MM/dd')
+        const afterDate = DateTime.fromFormat(b.frontmatter.date, 'yyyy/MM/dd')
         return afterDate - beforeDate
     })
 }

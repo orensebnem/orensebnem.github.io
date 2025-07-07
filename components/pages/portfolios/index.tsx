@@ -3,11 +3,11 @@ import PortfolioModel from "../../../interfaces/PortfolioModel";
 import Section from "../../section";
 
 
-export const PortfoliosPage = ({data}: { data: PortfolioModel[] }) => {
+export const PortfoliosPage = ({title, data}: { title?:string, data: PortfolioModel[] }) => {
 
     return (
         <>
-            <Section title="PORTFOLIO"/>
+            {title && <Section title={title}/>}
             <SPortfolios data={data}/>
         </>
     )

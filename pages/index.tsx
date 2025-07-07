@@ -15,7 +15,7 @@ const IndexPage: React.FC<{
     return (
         <>
             <AboutMePage/>
-            <PortfoliosPage data={portfolios}/>
+            <PortfoliosPage title='PORTFOLIO' data={portfolios}/>
         </>
     );
 };
