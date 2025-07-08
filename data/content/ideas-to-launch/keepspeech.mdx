@@ -11,9 +11,33 @@ headerAnimation: keepspeech
 
 Welcome to the progress log of KeepSpeech. This page documents key updates, features, and technical decisions since the project's inception.
 
+<br/>
 ---
+<br/>
 
+## ⚡ Jul 8, 2025  Managing Third Party Risks
+
+<Components.Chakra.Box>
+    Today we resolved an integration error caused by a recent change on <b>Zoom</b>’s side which
+    temporarily disrupted the core product feature. After identifying the root cause,
+    we adjusted our implementation and deployed the fix immediately to production.
+
+    This was not the first time we experienced a disruption due to third party changes.
+    A similar issue occurred in February 2025, which took nearly five hours to identify and fix.
+    These recurring incidents have made it clear that <b>integration risks are a core business weakness for KeepSpeech.</b>
+
+    Since we rely on third party platforms like Zoom, we often have no visibility into their deployment timelines
+    or upcoming changes.
+
+    This lack of control introduces a risk to our <b>service reliability and SLA commitments</b>,
+    which could impact user trust and product reputation if not resolved quickly.
+    We are actively exploring mitigation strategies to improve resilience, such as automated monitoring,
+    fallback mechanisms, and direct communication with platform providers when possible.
+</Components.Chakra.Box>
+
+<br/>
 ## Jun 16, 2025
+<br/>
 
 <Components.Chakra.Box>
     <Components.Chakra.Image
@@ -23,7 +47,9 @@ Welcome to the progress log of KeepSpeech. This page documents key updates, feat
     Completed Microsoft Teams integration; conducted user testing, refined UI and usability based on feedback.
 </Components.Chakra.Box>
 
+<br/>
 ---
+<br/>
 
 ## Jul 10, 2024
 
@@ -35,10 +61,8 @@ Welcome to the progress log of KeepSpeech. This page documents key updates, feat
     our logo reflects our tool's ability to hear and understand you, transforming your meetings into text that's ready
     for action.
 </Components.Chakra.Box>
-
-
-
+<br/>
 ---
 
 
-_Last updated: Jun 16, 2025_
+_Last updated: Jul 8, 2025_
