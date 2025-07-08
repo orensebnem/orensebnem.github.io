@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.7.1...v1.8.0) (2025-07-08)
+
+
+### Features
+
+* **keepspeech/ideas-to-launch:** add 8 Jul, zoom integration problem ([8936ce3](https://github.com/orensebnem/orensebnem.github.io/commit/8936ce3e6fd15e703f6720bddc01307f6a6be9c0))
+
 ## [1.7.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.7.0...v1.7.1) (2025-07-07)
 
 
