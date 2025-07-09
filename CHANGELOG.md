@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.8.0...v1.9.0) (2025-07-09)
+
+
+### Features
+
+* **editor pro:** add AI feature ([ea9dd1c](https://github.com/orensebnem/orensebnem.github.io/commit/ea9dd1cdebb6b420a76c593aeff15e4b481dca9d))
+
 # [1.8.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.7.1...v1.8.0) (2025-07-08)
 
 
