@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.9.0...v1.10.0) (2025-07-28)
+
+
+### Features
+
+* **sideProjects/keepspeech:** implement google meet ([7e95cdc](https://github.com/orensebnem/orensebnem.github.io/commit/7e95cdce85910aad17c65824f6fc94f77cd1155e))
+
 # [1.9.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.8.0...v1.9.0) (2025-07-09)
 
 
