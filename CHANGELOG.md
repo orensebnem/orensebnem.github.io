@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/orensebnem/orensebnem.github.io/compare/v1.10.0...v1.10.1) (2025-07-28)
+
+
+### Bug Fixes
+
+* **sideProjects/keepspeech:** change image size ([3f915b9](https://github.com/orensebnem/orensebnem.github.io/commit/3f915b922fb98fc21fb34f6ab36699cf6340bf07))
+
 # [1.10.0](https://github.com/orensebnem/orensebnem.github.io/compare/v1.9.0...v1.10.0) (2025-07-28)
 
 
